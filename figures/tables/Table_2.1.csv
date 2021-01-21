@@ -1,0 +1,5 @@
+Soil property;Unit/Symbol;Saline;Saline-sodic;Sodic
+Electrical conductivity;ECe (dS/m);> 4;> 4;< 4
+Exchangeable sodium Percent;ESP;< 15;> 15;> 15
+pH;-;< 8.5;< 8.5;> 8.5
+Sodium adsorption ratio;SAR;< 13;> 13;> 13

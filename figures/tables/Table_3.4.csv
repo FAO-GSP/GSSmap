@@ -1,0 +1,15 @@
+Property;Notation;Units;Description;Measurement method
+Electrical conductivity;ECSE;dS/m;EC (SE*);Saturated soil paste extract
+;EC;dS/m;EC of soil solution;Other soil extracts (1:n mix
+;;;;= soil:water mix)
+;ECa;dS/m;Apparent EC;EC of bulk soil in-situ (EMI, TDR, etc.)
+Salt content;TSS;mg/L;Total soluble salts;Evaporation of saturated soil paste extract
+;ions;mg/L;Soluble ions;Photometry/spectrometry
+Reaction;pH;-;Soil pH (water);pH meter/ glass electrode
+Ionic ratios;SAR;-;Sodium Adsorption;Ratio = sodium (Na) ions/(Mg and Ca ions)
+;;;;
+;ESP;-;Exchangeable Sodium;Ratio = exchangeable Na*100/CEC**)
+;Sodium;-;Sodium-chloride - sulphate ions;Ratio = Na ions/(sum of Cl and SO4 ions)
+;;;;
+;carbonate;-;Carbonate-chloride- sulphate;Ratio = sum (carbonate &
+;;;;bicarbonate) /sum (Cl & SO4) ions

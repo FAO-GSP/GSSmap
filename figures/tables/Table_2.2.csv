@@ -1,0 +1,10 @@
+﻿Soil property;Unit/Symbol;Saline;Saline-sodic;Sodic;Reference
+Electrical conductivity;ECe (dS/m);> 4;> 4;< 4;Richards1 (Abrol*1)
+Exchangeable sodium;ESP;< 15;> 15;> 15;Richards1 (Abrol*1)
+pH;-;< 8.5 (<8.2);< 8.5 (<8.2);> 8.5(>8.2);Richards1 (Abrol*1)
+Sodium adsorption ratio;SAR;< 13;> 13;> 13;Richards1 (Abrol*1)
+Ratio of salt ions - Sodium;[Na+/(Cl-+SO4 -2)];<1;-;> 1;Choudhary2
+"Ratio of salt ions - 
+Carbonate";[CO3 +HCO3 ]/(Cl +SO4 );< 1;-;> 1;Chhbra3
+Salt content;TSS (mg/l);< 2640;> 2640;< 2640;Horneck4
+Salt content;% Soluble salt;> 0.1;>0.1;<0.1;Horneck5

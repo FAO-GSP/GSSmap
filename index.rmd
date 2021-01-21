@@ -1,0 +1,164 @@
+--- 
+title: ""
+
+author: "MAPPING OF SALT-AFFECTED SOILS - Technical manual, Rome, 2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+site: bookdown::bookdown_site
+css: "justify.css"
+#cover-image: images/cover.png
+documentclass: book
+papersize: b5
+fontsize: 10pt
+#bibliography: "GSOCseq_references_FAO.bib"
+#csl: "food-and-agriculture-organization-of-the-united-nations.csl"
+#nocite: '@*'
+link-citations: yes
+description: The GSSmap Technical Manual
+always_allow_html: true
+---
+\mainmatter
+\pagestyle{fancy}
+
+
+```{r set-options, echo=FALSE, cache=FALSE}
+options(width = 65)
+library(kableExtra)
+## redefine str for the width option
+str <- function(...){
+  utils::str(..., strict.width = "cut")}
+# reproducible results
+set.seed(123)
+## Boolean object for running all the code #####
+# if FALSE will use precalculated RK prediction and svm tuning
+#RUN.ALL <- TRUE
+# Cache results
+knitr::opts_chunk$set(cache=T)
+```
+
+\frontmatter
+\addtocontents{toc}{\protect\hypersetup{hidelinks}}   
+\addtocontents{lot}{\protect\hypersetup{hidelinks}}
+\addtocontents{lof}{\protect\hypersetup{hidelinks}}
+\tableofcontents
+\listoffigures
+\listoftables
+\printnomenclature
+
+# Authors and contributos{-}
+
+## Authors{-}
+
+
+Christian Omuto   
+Ronald Vargas   
+El Mobarak A. Abdelmagid    
+Nuha Muhammed   
+Kostiantyn Viatkin     
+Yusuf Yigini   
+
+
+  
+\vfill
+
+
+## Contributors{-}
+
+Christian Thine Omuto   (Global Soil Partnership, FAO)  
+El Mobarak A. Abdelmagid    (Agriculture research centre (ARC), Sudan)  
+Nuha Muhammed   (Agriculture research centre (ARC), Sudan)  
+Ronald Vargas   (Global Soil Partnership, FAO)  
+Kostiantyn Viatkin    (Global Soil Partnership, FAO)  
+Yigini Yusuf    (Global Soil Partnership, FAO)  
+Maria Konyuskova   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
+Rosa Poch   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
+Mohammad Jamal Khan   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
+Megan Balks    (Intergovernmental Technical Panel on Soils (ITPS), FAO)    
+Attia Rafla    (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
+Ashok Patra   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
+Siosiua Halavatau   (Intergovernmental Technical Panel on Soils (ITPS),FAO)  
+Lydia Chabala   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
+Samuel Francke    (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
+Isabelle Verbeke (Global Soil Partnership, FAO)  
+Matteo Sala (Global Soil Partnership, FAO)  
+
+
+**Recommended citation:**
+
+> Omuto CT, Vargas RR, El Mobarak, AM, Mohamed N, Viatkin K, Yigini Y. 2020. Mapping of salt-affected soils: Technical manual. Rome, FAO
+https://doi.org/10.4060/ca9215en
+
+
+
+# Preface{-}  
+Salt-affected soils such as saline or sodic soils are distributed in all continents at various levels of problem intensity.
+They are soils with high amounts of soluble salts and/or sodium ions. An updated information of their distribution
+and drivers is a first step towards their sustainable management. This book provides technical guidelines and
+approach for developing a harmonized multiscale soil information of salt-affected soils. The book is organized into
+three sections covering seven chapters. The sections are sequentially arranged but independently designed to
+benefit focused readership who may want to go straight to any section. Section 1 givesthe background information.
+It has three chapters covering existing literature on the characteristics and mapping methods for salt problems in
+the soil. It is intended to illustrate the basic concepts, linkage of the characteristics of salt-affected soils with input
+data requirements for their mapping, existing classification methods, and global distribution of these soils. Section
+2 covers the methodological procedures for developing multiscale spatial information of salt-affected soils. It has
+two chapters describing requirements, input data preparation, and the procedural steps for developing spatial
+information of salt-affected soils. It outlines how data from different sources and characteristics are harmonized
+and integrated to produce information of salt-affected soils. Section 3 covers information sharing and resources
+mobilization when developing information on salt-affected soils. It gives the guidelines for preparing spatial maps
+and steps for value-addition to benefit end-users of the information. It also contains a generic training program for
+building technical capacity for mapping salt-affected soils. This program also serves as one of the steps for
+harmonizing product development in multiscale mapping activities.  
+
+# Acknowledgements{-}  
+The data used in this manual came from various sources. The Government of Sudan through the
+Agriculture Research Centre (ARC) in Wad Madani, authorized the use of their soil data and some
+covariates. Remote sensing images and elevation data were downloaded from the United States
+Geological Survey website (https://earthexplorer.usgs.gov/). We received technical and financial support
+from Food Agriculture Organization (FAO) through Global Soil Partnership (GSP).
+
+# Executive Summary{-}
+## Background{-}
+Salt-affected soils are soils with high amounts of soluble salts and/or sodium ions. The first global
+distribution of these soils was first estimated in the late 1970s at about 1 billion hectares. Since then,
+there has been inconsistent updates of the global distribution. Recent literature at the globalscale mostly
+use data that was collected in the late 1970s and still portray global distribution of affected areas at about
+1 billion hectares. Evidently, a new update is necessary to improve knowledge of the status and actual
+distribution of salt-affected soils. Part of the reason for the inconsistent global update is due to unclear
+coordination for periodic data collection and harmonized data collection protocols to support it. The
+Global Soil Partnership (GSP) of the Food and Agriculture Organization (FAO) is leading global
+mobilization to kickstart information update from the country to global level. The GPS's bottom-up
+approach is underpinned by the twin need to support countries to update their national information and
+to contribute to the update of global information of salt-affected soils. One of the challenges with this
+approach is the potential uncertainties due to differences in datasets and approaches by countries. The
+focus of this book is to provide guidelines for harmonizing input data and approaches for mapping saltaffected soils at all levels of information update.
+Developing spatial information of salt-affected soils
+Many methods exist in the literature for mapping salt-affected soils. They include methods based on soiltype mapsintegrated with expert opinions, remote sensing applications and soil indicator-based method.
+The requirements, limitations and example applications of these methods have been highlighted in this
+book. Prominence has been given to the indicator-based approach for mapping salt-affected soils
+because 1) the method is amenable to country-level harmonization of procedures, 2) it develops
+information of both salt-affected soils and soil properties related to salt problems, 3) the method is able
+to quantify mapping accuracy and uncertainty, 4) quantifies horizontal and vertical information. The
+description of its methodological steps has been illustrated using case-study test data from Northern
+Sudan and minimum requirement for input data, computer, and software. The intention is to present the
+steps as clearly and repeatable as possible to enable implementation with own datasets.
+
+## Resource mobilization{-}
+Developing information and updating the status of salt-affected soils is resource-intensive and should be
+properly planned. This book has dedicated the last two chapters for resources mobilization to build
+national information on salt-affected soils. It outlines key areas of focus for resource mobilization and
+steps for building technical resources to develop a harmonized database for assessing salt-affected soils.
+It also discusses steps for enriching spatial maps through value addition to improve their information
+resource.
+
+# SECTION ONE - BACKGROUND INFORMATION{-}   
+This section gives the background information related to the global mobilization to provide mapping of
+salt-affected soils. It also covers a brief literature review on the characteristics, distribution, indicators and
+drivers, and mapping and classification methods for these soils. The section is intended to illustrate the
+relationship between the characteristics of these soils and input data requirement for their mapping and
+classification.  
+
+
+![(c) Gulchekhra Khasankhanova](figures/images/SAM_1351.jpg)  
+

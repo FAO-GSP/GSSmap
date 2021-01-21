@@ -1,0 +1,218 @@
+# References{-}
+
+**Abdelly C., Ozturk M., Ashraf M., Grignon C.** 2008. *Biosaline agriculture and high salinity tolerance.* Verlag AG. Berlin
+
+**Abd-Elwahid M.**, 2018. *Influence of long-term wastewater irrigation on soil quality and its spatial distribution*. Annals of Agricultural Sciences, 63:191-199.
+
+**Abou-Baker N., El-Dardiry E**. 2015. *Integrated management of salt-affected soils in agriculture: Incorporation of soil salinity control methods*. Elsevier Academic Press, Amsterdam.
+
+**Abrol I.P., Yadav J.S.P, Massoud F.I.** 1988. *Salt-affected soils and their management*. FAO Soils Bulletin 39. FAO, Rome.
+
+**Abuelgasim A, Ammad R**. 2019. *Mapping soil salinity in arid and semi-arid regions using Landsat 8 OLI satellite data*. Remote Sensing Applications: Society and Environment, 13: 415-425.
+
+**Amrhein C**. 1996. *Australian sodic soils: Distribution, properties, and management*. Soil Science 161. pp412.
+
+**Bivand R., Keitt T, Rowlingson B., Pebesma E**. 2019. rgdal: *Bindings for the 'Geospatial' Data Abstraction Library*. https://cran.r-project.org/web/packages/rgdal/index.html
+
+**Bivand R., Keitt T., Rowlingson B., Pebesma E.** 2019. rgdal: *Bindings for the 'Geospatial' Data Abstraction Library*. https://cran.r-project.org/web/packages/rgdal/index.html
+
+**Bouchhima R.A., Sarti M., Ciolfi M., Lauteri M., Ksibi M**., 2008. *Decision tree for mapping of halophyte cover around Ghannouch, Tunisia*. Environmental Monitoring and Assessment, 190: 742.
+
+**Box, G. E. P. and Cox, D. R.** (1964). *An analysis of transformations, Journal of the Royal Statistical Society*, Series B, 26, 211-252.
+
+**Buckley A**. 2012. *Make maps people want to look at: Five primary design principles for cartography*. Winter 2012. https://www.esri.com/news/arcuser/0112/files/design-principles.pdf
+
+**Cherlet M., Hutchinson C., Reynolds J., Hill J., Sommer S., von Maltitz G.** 2018. *World Atlas of Desertification*. Publication Office of the European Union, Luxembourg. (https://www.esri.com/news/arcuser/0112/files/design-principles.pdf)*doi:10.2760/9205.
+
+**Chi C.M., Wang Z.C**. 2010. *Characterizing salt-affected soils of Songnen plain using saturated paste and 1:5 soil-to-water extraction methods*. Arid Land Res. Mgmt. 24:1-11. doi:10.1080/15324980903439362
+
+**Chinese Academy of Sciences**. 2001. Chinese soil taxonomy. Coordinated by Institute of Soil Science, Chinese Academy of Sciences, p 203.
+
+**Choudhary O.P., Kharche V.K.** 1993. *Soil salinity and sodicity. In Soil Science*: An Introduction. Eds. Leeper GW and Uren NC. Chapter 10. pp 354-385. Melbourne University Publishing.
+
+**Corwin DL, Lesch SM.** 2005. *Apparent soil electrical conductivity measurements in agriculture. Computers and Electronics in Agriculture*, 46(1-3 Spec Iss.): 11-43.
+
+**Craig D.A., Hempel J. 2017**. *Soil taxonomy and soil classification*. International Encyclopedia Of Geography: People,	the	Earth,	Environment	and	Technology,	1-15, https://doi.org/10.1002/9781118786352.wbieg0347
+
+**Dajic-Stevanovic Z., Pecinar I., Kresovic M., Vrbnicanin S., Tomovic L**. 2008. *Biodiversity, utilization and management of grasslands of salt affected soils in Serbia*. Community Ecology, 9: 107-114
+
+**Daliakopoulus I.N., Tsanis I.T., Koutroulis A., Kourgialas N.N., Varouchakis A.E., Karatzas G.P.,** 
+
+**Ritsema C.J**. 2016. *Threat of salinity: A European scale review*. Science of the Total Environment,573(15): 727-739.
+
+**Dalton F.N., Van Genuchten M T.** 1986. *The time-domain reflectometry method for measuring soil water content and salinity*. Geoderma, 38(1-4): 237-250.
+
+**Efron, B.** 1992. *Jackknife-after-bootstrap standard errors and influence functions*. Journal of the Royal Statistical Society. Series B (Methodological), 83-127.
+
+**Fanning D.S., Fanning M.C.B.,** 1989. *Soil, Morphology, Genesis, and Classification*. John Wiley & Sons, New York.
+
+**FAO and ITPS**. 2018. *Global Soil Organic Carbon Map (GSOCmap) Technical Report*. Rome. 162 pp.
+
+**FAO, IIASA, ISRIC, ISS-CSA and JRC**. 2008. *Harmonized World Soil Database (version 1.0),* FAO, Rome, Italy and IIASA, Laxenburg, Austria.
+
+**FAO.** 1984. *Prognosis of salinity and alkalinity*. FAO, Rome.
+
+**FAO**. 2006. *Guidelines for soil description*. FAO, Rome
+
+**FAO**. 2012. *A Guide to resource mobilization: promoting partnership with FAO*. FAO. Rome
+
+**FAO**. 2020. *Country guidelines and specifications for mapping salt-affected soils*. Rome
+
+**FAO-ITPS-GSP**. 2015. *Status of the world's soil resources*. FAO-ITPS-GSP Main Report, FAO, Rome, Italy, pp 125-127.
+
+**Farifteh J., van de Meer F., van der Maijde M., Atzberger C.,** 2008. *Spectral characteristics of salt-affected soils: A laboratory experiment*. Geoderma, 145: 196-206.
+
+**Farzamian M., Paz M.A., Paz A.M., Castanheira N.L., Goncalves M.C., Santos F.A.M., Triantafilis J**. 2019. *Mapping soil salinity using electromagnetic conductivity imaging-A comparison of regional and location- specific calibrations*. Land Degradation and Development, 30(12): 1393-1406.
+
+**Fox J., Wesberg S., Price B**. 2020. car: Companion to Applied Regression. https://cran.r- project.org/web/packages/car/index.html
+
+**Gorji T, Yildirim A., Sertel E, Tanik A**.(https://cran.r-project.org/web/packages/car/index.html) 2019. *Remote sensing approaches and mapping methods for monitoring soil salinity under different climate regimes*. International Journal of Environment and Geoinformatics 6(1): 33-49 (2019).
+
+**GSP-FAO.** 2018. *Report of the Sixth Meeting of the Plenary Assembly of the Global Soil Partnership*. GSPPA- VI/18/Report. http://www.fao.org/3/CA0389EN/ca0389en.pdf
+
+**Gupta H.V., Kling H.** 2011. *On typical range, sensitivity, and normalization of mean squared error and Nash Sutcliffe efficiency type metrics*. Water Resources Research, 47: W10601
+
+
+
+**Hengl	T.**	2019.	GSIF:	*Global	Soil	Information	Facilities*.	https://cran.r- project.org/web/packages/GSIF/index.html
+
+**Hijman R.J.** 2020. *raster: Geographic Data Analysis and Modeling.* https://cran.r- project.org/web/packages/raster/index.html
+
+**Hogg T.T.J., Henry J.L**. 1984. *Comparison of 1:1 and 1:2 suspensions and extracts with the saturation extracts in estimating salinity in Saskatchewan*(https://cran.r-project.org/web/packages/raster/index.html)*. Can. J. Soil Sci. 1984, 64, 699-704.
+
+**Holst E, Thyregod P.** 1999. *A statistical test for the mean squared error*. Journal of Statistical Computation and Simulation, 63(4): 321-347
+
+**Horneck, D.S., Ellsworth, J.W., Hopkins, B.G., Sullivan, D.M., Stevens, R.G.** 2007. *Managing Salt-Affected Soils for Crop Production*. PNW 601-E. Oregon State University, University of Idaho, Washington State University.
+
+**IUSS Working Group WRB**. 2015. *World Reference Base for Soil Resources 2014, update 2015 International soil classification system for naming soils and creating legends for soil maps*. World Soil Resources Reports No. 106. FAO, Rome.
+
+**Ivuskin K., Bartholomeus H., Bregt A.K., Pulatov A., Kempen B., de Sousa L.** 2019. *Global mapping of soil salinity change*. Remote Sensing of Environment, 231: 111260
+
+**Jafari A., Finke P.A., Wauw J.V., Ayoubi S., Khademi H.** 2012. *Spatial prediction of USDA - great soil groups in the arid Zarand region, Iran: comparing logistic regression approaches to predict diagnostic horizons and soil types*. European Journal of Soil Science, 63(2): 284-298. https:// doi.org/10.1111/j.1365-2389.2012.01425.x
+
+**Jalali M., Merikhpour Kaledhonkar M.J., van der Zee SEATM**. Agriculture Water Management, 95(2): 143-153.
+
+**Kargas G., Chatzigiakoumis I., Kollias A., Spiliotis D., Massas I., Kerkides P**. 2018. *Soil salinity assessment using saturated paste and mass soil:water 1:1 and 1:5 ratios extracts*. Water, 10:1589, doi:10.3390/w10111589
+
+**Karla N.K., Joshi D.C.,** 1994. *Spectral reflectance characteristics of salt-affected arid soils of Rajasthan*. Journal of the Indian Society of Remote Sensing, 22(3): 183-193.
+
+**Kelly W.P., Brown (https://doi.org/10.1111/j.1365-2389.2012.01425.x)**S.M,**. 1934. *Principles governing the reclamation of alkali soils*. Hilgardia, 8(5): 149-177.
+
+**Khitrov B.N., Rukhovivh D.I., Kalinina N.V., Novikova A.F., Pankova EI, Chernousenko G.I**. 2009. *Estimation of the Areas of Salt-Affected Soils in the European Part of Russia on the Basis of a Digital Map of Soil Salinization on a Scale of 1: 2.5 M.* Eurasian Soil Science, 42(6): 581-590.
+
+
+**Kipchumba S.K, Zhimin L., Chelagat R.** 2015. *A study on the sources of resources and capacity building in resource mobilization: case of private chartered universities in Nakuru Town*, Kenya. Journal of International Education and Leadership, 3(2): 1-18
+
+**Krasilnikov P., Gutierrez-Castorena M.C., Ahrens RJ, Cruz-Gaistardo C.O., Sedov S., Solleiro-Robelledo E**., 2013. *The soils of Mexico*. Springer, London.
+
+**Kuhn M**. 2020. caret: *Classification and Regression Training*. https://cran.r- project.org/web/packages/caret/index.html
+
+**Landon J.R. 1984**. *Booker Tropical Manual. Longman Inc*., New York, pp. 157-163.
+
+**Lesch S.M., Rhoades J.D., Lund L.J., Corwin D.L.** 1992. *Mapping soil salinity using calibrated electromagnetic measurements*. Soil Science Society of America Journal, 56: 540-548.
+
+**Li J., Pu L., Zhu M., Zhang J., Li P., Dai X., Xu Y., Liu L.** 2014. *Evolution of soil properties following reclamation in coastal areas: A review*. Geoderma, 226-227: 130-139.
+
+**Li Z., Zhu Q., Gold C.** 2005. *Digital Terrain Modeling: Principles and methodology*, CRC Press: Boca Raton, FL, 323pp
+
+**Mandal A.K., Reddy G.P. O, Ravisankar T**. 2011. *Digital database of salt affected soils in India using Geographic Information System*. Journal of Soil Salinity and Water Quality, 3, 16-29
+
+**Massoud, F.I**. 1976. *Basic principles for prognosis and monitoring of salinity and sodicity. In: Proc. International Conference on Managing Saline Water for Irrigation*. Texas Tech. University, Lubbock, Texas. 16-20 August 1976. pp. 432-454.
+
+**Matternicht G.I., Zinc J.A..** 2003. *Remote sensing of soil salinity: potentials and constraints.* Remote Sensing of Environment, 85:1-20
+
+**McBratney A.B., Mendon\c{c}a-Santos M.L**, Minasny B. 2003. *On digital soil mapping*. *Geoderma* 117: 3-52
+
+**Miller J.J., Brierley J.A.** 2011. *Solonetzic soils of Canada: genesis, distribution, and classification*. Canadian Journal of Soil Science, 91:889-902.
+
+**Miller J.J., Pawluk S**. 1994. *Genesis of solonetzic soils as a function of topography and seasonal dynamics*. Canadian Journal of Soil Science, 74: 207-217.
+
+**Munn L.C., Boehm M.M.** 1983. *Soil genesis in a Natrargrid-Haplargid complex in Northern Montana*. Soil Science Society of America Journal, 47(6): 1186-1192.
+
+**Muyen Z., Moore G.A., Wrigley R.J.** 2011. *Soil salinity and sodicity effects of wastewater irrigation in southeast Australia*. Agriculture Water Management, 99:33-41.
+
+**Nikalje C.G., Srivastava A.K., Pandey K.D., Suprasanna P.** 2018. *Halophytes in biosaline agriculture: mechanism, utilization, and value addition*. Land Degradation and Development, 29(4): 1081-1095
+
+**Omuto, C.T**. 2020. S*oil assessment: Assessment Models for Agriculture Soil Conditions and Crop Suitability*. https://cran.r-project.org/web/packages/soilassessment/index.html
+
+
+
+**Ozcan H., Ekinci H., Yigini Y., Yuksel O**., 2006. *Comparison of four soil salinity extraction methods. Proceedings of 18th International Soil Meeting on "Soil Sustaining Life on Earth, Managing Soil and Technology*", May 22-26, 2006, Sanliurfa, Turkey, p. 697-703.
+
+**Pankova EI, Konyushkova M.V.** 2013. *Climate and soil salinity in the deserts of Central Asia*. Eurasian Soil Science, 46(7): 721-727.
+
+**Pankova EI.** 2015. *Salt-affected soils of Russia: Solved and unsolved problems*. Eurasian Soil Science, 48:115-127.
+
+**Pebesma E., Bivand R.** 2020. sp: *Classes and Methods for Spatial Data*. https://cran.r- project.org/web/packages/sp/index.html
+
+**Perri S., Suweis S., Entekhabi B., Molini A.** 2018. *Vegetation controls on dryland salinity*. Geophysical Research Letters, 45(21): 11,669-11,682.
+
+**Piotr H.** 2008. *Quantitative and qualitative differentiation of soil salinity in Poland*. Berichte der Deutschen Bodenkundlichen Gesellschaft. 1-4.
+
+**Pulido-Bosch A., Rigol-Sanchez J.P., Vallejos (https://doi.org/10.1007/s12665-018-7386-6) **A., Andreu J.M., Ceron J.C., Molina-Sanchez L., Sola F.** 2018. *Impacts of agricultural irrigation on groundwater salinity*. Environmental Earth Sciences volume, 77, 197. https://doi.org/10.1007/s12665-018-7386-6
+
+**Rangesamy P., Marchuk A.** 2011. *Cation ratio of soil structural stability (CROSS)*. Soil Research, 49: 280-285.
+
+**Richards L.A.** 1954. *Diagnosis and improvements of saline and alkali soils*. Agriculture Handbook No. 60. USDA, Washington.
+
+**Rietz D.N., Haynes R.J.** 2003. *Effects of irrigation-induced salinity and sodicity on soil microbial activity*. Soil Biology and Biochemistry, 35: 845-854.
+
+**RStudio Team**. 2015. RStudio: *Integrated Development for R. RStudio*, Inc., Boston, MA  http://www.rstudio.com/
+
+**Sawicka K., Heuvelink G.B.M., Walvoort D.J.J.** 2018. *Spatial uncertainty propagation analysis with the spup R package*. The R Journal 10(2): 180-199
+
+**Schaetzl, R.J., Anderson, S.,** 2005. *Soils, Genesis and Geomorphology*. Cambridge University Press, Cambridge.
+
+**Schirrman M., Gebbers B., Kramer E., Seidel J. 2011.** *Soil mapping with an on-the-go sensor. Sensors*, 1(1): 573-598. https://doi.org/10.3390/s110100573
+
+**Schofield R., Thomas D.S.G, Kirkby M.J.** 2001. *Causal processes of soil salinization Tunisia Spain and Hungary*. Land Degradation and Development, 12(2): 163-181.
+
+**Scudiero E., Corwin L.D., Ray A., Yemoto .K, Clary W., Wang Z., Skaggs T.** 2017. *Remote sensing is a viable tool for mapping soil salinity in agricultural lands.* California Agriculture. 71. 10.3733/ca.2017a0009
+
+**Sheikholeslami R., Razavi S**. 2017. *Progressive Latin hypercube sampling: An efficient approach for robust sampling-based analysis of environmental models*. Environmental Modelling and Software, 93: 109-126
+
+
+**Sheng J., Ma L., Jiang P., Li B., Huang F., Wu H.** 2010. *Digital soil mapping to enable classification of the salt-affected soils in desert agro-ecological zones. Agriculture Water Management*, 97(12): 1944-1951.
+
+**Skarie R.L., Arndt JL, Richardson JL.** 1987. *Sulfate and gypsum determination in saline soils*. European Soil Science Society of America Journal, 51:901-905.
+
+**Soil Survey Staff**. 1999. *Soil Taxonomy: A basic system of soil classification for making and interpreting soil surveys*. USDA Agriculture Handbook 436. Natural Resource Conservation Service. Washington DC.
+
+**Sonmez S., Buyuktas D., Asri F.O..** 2008. *Assessment of different soil to water ratios (1:1, 1:2.5, 1:5) in soil salinity studies*. Geoderma, 144: 361-369
+
+**Sparks D.L.** 2003. *Environmental Soil Chemistry*. Academic Press.
+
+**Squires, V.R., Glenn E.P.** 2004. *Salination, desertification, and soil erosion. In: Squires, V.R. (Ed.),* The Role of Food, Agriculture, Forestry and Fisheries in Human Nutrition. UNESCO, EOLSS Publishers, Oxford, UK.
+
+**Sumner M.E., Naidu R**. 1998. *Sodic Soils Distribution, Properties, Management, and Environmental Consequences*. Oxford University Press, New York.
+
+**Szabolcs I.** 1979. *Review of research on salt-affected soils*. UNESCO, France.
+
+**Szabolcs I.** 1987. The global problems of salt-affected soils. Acta Agronomica Hungarica, 36:159-172.
+
+**Taghizadeh-Mehrjardi R., Minasny B., Toomanian N., Zeraatpisheh M., Amirian-Chakan A., Triantafilis J.** 2019. *Digital mapping of soil classes using ensemble of models in Isfahan Region,* Iran. Soil Systems, 3, 37. doi:10.3390/soilsystems3020037
+
+**Toth G., Adhikari K., Varallyay G., Toth T., Bodis K., Stolbovoy V**. 2008. *Updated map of salt affected soils in the European Union. In.* Toth *et al.* (Eds). Threats to soil quality in Europe. EUR 23438. Scientific and Technical Research series Luxembourg: Office for Official Publications of the European Communities p.61-74. JRC
+
+**Triantafilis J., Odeh I.O.A., McBratney A.B..** 2001. *Five geostatistical models to predict soil salinity from electromagnetic induction data across irrigated cotton*. Soil Society of America Journal, 65:869-878.
+
+**USDA-NRCS**, 1999. *The mechanics of soil survey*. Lincoln Nebraska.
+
+**Weibel R., Heller M**. 1991. *Digital terrain modelling. In: Maguire, D. J.; Goodchild, M. F.; Rhind, D. W., ed. Geographic Information Systems - Vol. 1: Principles*. Harlow Longman
+
+**Wicke B., Smeets E., Dornburg V., Vashev B., Gaiser T., Turkenburg W., Faaij A**. 2011. *The global technical and economic potential of bioenergy from salt-affected soils*. Energy and Environmental Science 4, 2669-2681.
+
+**Wilson J.P., Gallant J.C.** 2000. *Digital terrain analysis. In: Wilson JP, Gallant JC, editors. Terrain Analysis: Principles and Applications. John Wiley & Sons*, Inc.; 2000. pp. 1-28
+
+**Yang X, Frey MK, Ghodes R.H., Norris S.J., Brooks I.M., Anderson S.P., Nishimura K., Jones A.E.,** 
+
+**Wolff W.E.** 2019. *Sea salt aerosol production via sublimating wind-blown saline snow particles over sea-ice: parameterizations and relevant micro-physical mechanisms*. Atmospheric Chemistry and Physics, 19: 8407- 8424.
+
+**Yu-Peng W., Zhang Y., Ye-Meng B., Zhen-Jun S.**. 2015. *Biodiversity in saline and non-saline soils along the Bohai Sea Coast, China*. Pedoshere, 25(2): 307-315.
+
+**Zaman M, Shahid SA, Heng L.** 2018. *Guidelines for Soil Salinity Assessment, Mitigation and Adaptation Using Nuclear and Related Techniques*. International Atomic Energy Agency-Springer, Vienna.
+
+**Zhang H., Schroder J.L., Pittman J.J., Wang J.J., Payton M.E.** 2005. *Soil salinity using saturated paste and 1:1 soil to water extract*. Soil Sci. Soc. Am. J. 69:1146-1151.
+
+**Zurqani H., Mikhailova E., Post C., Schlautman M., Sharp J**. 2018. *Predicting the classes and distribution of salt-affected soils in Northwest Libya*. Communications in Soil Science and Plant Analysis, 49(6): 689- 700, DOI: 10.1080/00103624.2018.1432637
+

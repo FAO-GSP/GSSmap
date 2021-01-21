@@ -1,0 +1,85 @@
+# Glossary{-}
+
+**Absorption**: Uptake of matter or energy by a substance Acid soil: Soil with a pH value less than 7.0.
+
+**Acidification**: Process whereby soil becomes acid (pH < 7) because acid parent material is present or in regions with high rainfall, where soil leaching occurs. Acidification can be accelerated by human activities (use of fertilizers, deposition of industrial and vehicular pollutants).
+
+**Adsorption**: Process by which atoms, molecules or ions are retained on the surfaces of solids by chemical or physical bonding.
+
+**Alkali (sodic) soil**: A soil having so high a degree of alkalinity (pH 8.5 or higher) or so high a percentage of exchangeable sodium (15 percent or more of the total exchangeable bases), or both, that plant growth is restricted
+
+**Anion**: Particle with a negative charge. Her anion exchange capacity is sum of exchangeable anions that a soil can adsorb. Usually expressed as centimoles, or millimoles, of charge per kilogram of soil (or of other adsorbing material such as clay).
+
+**Base saturation**: The degree to which material having cation-exchange properties is saturated with exchangeable bases (sum of Ca, Mg, Na, and K), expressed as a percentage of the total cation-exchange capacity.
+
+**Calcareous soil**: A soil containing enough calcium carbonate (commonly combined with magnesium carbonate) to effervesce visibly when treated with cold, dilute hydrochloric acid.
+
+**Calcification**: Process whereby the soil is kept sufficiently supplied with calcium to saturate the soil cation exchange sites.
+
+**Cation exchange capacity**: The total amount of exchangeable cations that can be held by the soil, expressed in terms of mill equivalents per 100 grams of soil at neutrality (pH 7.0) or at some other stated pH value. The term, as applied to soils, is synonymous with base-exchange capacity but is more precise in meaning.
+
+**Decalcification**: Removal of calcium carbonate or calcium ions from the soil by leaching.
+
+**Electrical conductivity (EC)**: Conduction of electricity through water or a solution of soil commonly used to estimate the soluble salt content in solution, e.g. soil solution
+
+**Hydromorphic soils**: Formed under conditions of poor drainage in marshes, swamps, seepage areas or flats.
+
+**Ion**: Electrically charged atom or group of atoms.
+
+**Irrigation**: Application of water to soils to assist in production of crops. Methods of irrigation are:
+
+*   Basin: Water is applied rapidly to nearly level plains surrounded by levees or dikes.
+*   Border: Water is applied at the upper end of a strip in which the lateral flow of water is controlled by small earth ridges called border dikes, or borders.
+*   Controlled flooding: Water is released at intervals from closely spaced field ditches and distributed uniformly over the field.
+*   Corrugation: Water is applied to small, closely spaced furrows or ditches in fields of close-growing crops or in orchards so that it flows in only one direction.
+*   Drip (or trickle): Water is applied slowly and under low pressure to the surface of the soil or into the soil through such applicators as emitters, porous tubing, or perforated pipe.
+*   Furrow: Water is applied in small ditches made by cultivation implements. Furrows are used for tree and row crops.
+*   Sprinkler: Water is sprayed over the soil surface through pipes or nozzles from a pressure system.
+*   Subirrigation: Water is applied in open ditches or tile lines until the water table is raised enough to wet the soil.
+*   Wild flooding: Water, released at high points, is allowed to flow onto an area without controlled distribution.
+
+**Natric horizon**: A special kind of argillic horizon that contains enough exchangeable sodium to have an adverse effect on the physical condition of the subsoil. Neutral soil A soil having a pH value of 6.6 to 7.3. (See Reaction, soil.)
+
+**pH value**: A numerical designation of acidity and alkalinity in soil. (See Reaction, soil).
+
+**Profile soil**: A vertical section of the soil extending through all its horizons and into the parent material.
+
+**Reaction soil**: A measure of acidity or alkalinity of a soil, expressed as pH values. A soil that tests to pH 7.0 is described as precisely neutral in reaction because it is neither acid nor alkaline. The degrees of acidity or alkalinity, expressed as pH values, are:
+
+*   Ultra acid: Less than 3.5.
+*   Extremely acid: 3.5 to 4.4.
+*   Very strongly acid: 4.5 to 5.0.
+*   Strongly acid: 5.1 to 5.5.
+*   Moderately acid: 5.6 to 6.0.
+*   Slightly acid: 6.1 to 6.5.
+*   Neutral: 6.6 to 7.3
+*   Slightly alkaline: 7.4 to 7.8.
+*   Moderately alkaline: 7.9 to 8.4.
+*   Strongly alkaline: 8.5 to 9.0.
+*   Very strongly alkaline: 9.1 and high.
+
+**Saline soil**: A non-sodic soil (see sodic soil) containing sufficient soluble salt to adversely affect the growth of most crop plants. The lower limit of electrical conductivity in the saturation extract of such soils is conventionally set at 4 dS m-1(at 25$^\circ$C), though sensitive plants are affected at about half this salinity and highly tolerant ones at about twice this salinity. Salt-affected soils with a high exchangeable sodium percentage (ESP) greater than 15%, pH usually less than 8.5; in general, these soils are not suitable for agriculture.
+
+It's a soil that containing soluble salts in an amount that impairs growth of plants. A saline soil does not contain excess exchangeable sodium.
+
+**Salt-affected soil**: Soil that has been adversely affected by the presence of soluble salts, with or without high amounts of exchangeable sodium. See also saline soil, saline-sodic soil, and sodic soil.
+ 
+
+
+**Sodic soil**: Soil with excess of sodium, pH is higher than 7, usually in the range 8-10, exchangeable sodium percentage, ESP> 15 and very poor soil structure. These soils need special management and are not used for agriculture; non-sodic soils are without excess of sodium.
+
+**Sodic (alkali) soil**: A soil having so high a degree of alkalinity (pH 8.5 or higher) or so high a percentage of exchangeable sodium (15 percent or more of the total exchangeable bases), or both, that plant growth is restricted.
+
+**Sodicity**: The degree to which a soil is affected by exchangeable sodium. Sodicity is expressed as a sodium adsorption ratio (SAR) of a saturation extract, or the ratio of Na+ to Ca++ + Mg++. The degrees of sodicity and their respective ratios are:
+
+*   Slight: Less than 13:1.
+*   Moderate: 13-30:1.
+*   Strong: More than 30:1.
+
+**Sodium adsorption ratio (SAR)**: A measure of the amount of sodium (Na) relative to calcium (Ca) and magnesium (Mg) in the water extract from saturated soil paste. It is the ratio of the Na concentration divided by the square root of one-half of the Ca + Mg concentration.
+
+**Soil**: A natural, three-dimensional body at the earth's surface. It is capable of supporting plants and has properties resulting from the integrated effect of climate and living matter acting on earthy parent material, as conditioned by relief and by the passage of time.
+
+**Soil monitoring**: Repeated observation and measurement of selected soil properties and functions, mainly for studying changes in soil conditions.
+
+**Soil morphology**: Form and arrangement of pedological features. Subsoil technically, the B horizon; roughly, the part of the solum below plow depth. Surface soil, the A, E, AB, and EB horizons, is considered collectively. It includes all subdivisions of these horizons.
