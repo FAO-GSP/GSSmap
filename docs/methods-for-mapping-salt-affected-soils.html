@@ -50,7 +50,6 @@
 
 
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
 
 
 <style type="text/css">
@@ -147,7 +146,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2" data-path="characteristics-of-salt-affected-soils.html"><a href="characteristics-of-salt-affected-soils.html"><i class="fa fa-check"></i><b>2</b> Characteristics of salt-affected soils</a><ul>
 <li class="chapter" data-level="2.1" data-path="characteristics-of-salt-affected-soils.html"><a href="characteristics-of-salt-affected-soils.html#genesis-of-salt-affected-soils"><i class="fa fa-check"></i><b>2.1</b> Genesis of salt-affected soils</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="characteristics-of-salt-affected-soils.html"><a href="characteristics-of-salt-affected-soils.html#direct-deposit-model"><i class="fa fa-check"></i><b>2.1.1</b> Direct deposit model</a></li>
+<li class="chapter" data-level="2.1.1" data-path="characteristics-of-salt-affected-soils.html"><a href="characteristics-of-salt-affected-soils.html#soils-water-climate-interaction-mode"><i class="fa fa-check"></i><b>2.1.1</b> Soils-water-climate interaction mode</a></li>
+<li class="chapter" data-level="2.1.2" data-path="characteristics-of-salt-affected-soils.html"><a href="characteristics-of-salt-affected-soils.html#direct-deposit-model"><i class="fa fa-check"></i><b>2.1.2</b> Direct deposit model</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="characteristics-of-salt-affected-soils.html"><a href="characteristics-of-salt-affected-soils.html#characteristics"><i class="fa fa-check"></i><b>2.2</b> Characteristics</a></li>
 <li class="chapter" data-level="2.3" data-path="characteristics-of-salt-affected-soils.html"><a href="characteristics-of-salt-affected-soils.html#indicators-for-assessing-salt-affected-soils"><i class="fa fa-check"></i><b>2.3</b> Indicators for assessing salt-affected soils</a></li>
@@ -167,6 +167,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.2" data-path="methods-for-mapping-salt-affected-soils.html"><a href="methods-for-mapping-salt-affected-soils.html#bulk-soil-properties-and-soil-maps"><i class="fa fa-check"></i><b>3.4.2</b> Bulk-soil properties and soil maps</a></li>
 <li class="chapter" data-level="3.4.3" data-path="methods-for-mapping-salt-affected-soils.html"><a href="methods-for-mapping-salt-affected-soils.html#information-on-soil-forming-factors"><i class="fa fa-check"></i><b>3.4.3</b> Information on soil forming factors</a></li>
 <li class="chapter" data-level="3.4.4" data-path="methods-for-mapping-salt-affected-soils.html"><a href="methods-for-mapping-salt-affected-soils.html#other-ancillary-data"><i class="fa fa-check"></i><b>3.4.4</b> Other ancillary data</a></li>
+<li class="chapter" data-level="3.4.5" data-path="methods-for-mapping-salt-affected-soils.html"><a href="methods-for-mapping-salt-affected-soils.html#conversion-models"><i class="fa fa-check"></i><b>3.4.5</b> Conversion models</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="section-two-development-of-information-on-salt-affected-soils.html"><a href="section-two-development-of-information-on-salt-affected-soils.html"><i class="fa fa-check"></i>SECTION TWO - DEVELOPMENT OF INFORMATION ON SALT-AFFECTED SOILS</a></li>
@@ -289,147 +290,7 @@ Although the application of soil maps to identify salt-affected soils is popular
 <p>Remote sensing applications in mapping salt-affected soils target land surface evidence of salt problems in the soil. Examples of proximal sensors often used are electromagnetic induction (EMI), geophysical sounding, and reflectometers. These sensors are mostly used to determine bulk soil electrical conductivity (Lesch et al., 1992). Low-altitude sensors such as Unmanned Arial Vehicles (UAV) are also gaining traction in mapping salt-affected soils (Hu et al., 2019; Ivusking et al., 2019). Hu et al. (2019) tested hyperspectral camera mounted on UAV and EMI in mapping salinity and found UAV as the most promising method for high-resolution identification of soil surface salinity characteristics.</p>
 <p>Satellite remote sensing are the most popularly used. They cover wide areas in a single scene, which is economical for large-area mapping. Moreover, most satellite images are increasingly becoming freely downloadable and gaining wide applications because of globally tested models and free processing algorithms. Their applications range from interpretation of composite images to modelling the relationships between indices of image reflectance and indicators of salt problems in the soil (Matternicht and Zinc, 2003; Gorji et al., 2019). Widely used remote sensing images for mapping soil resources are Landsat, sentinel and (Moderate Resolution Imaging Spectroradiometer (MODIS) (Table 3.1). These images are globally available for free download.</p>
 <p><em>Table 3.1: Commonly used remote sensing image characteristics for mapping salt-affected soils</em></p>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;">
-ï Band category
-</th>
-<th style="text-align:left;">
-Bands
-</th>
-<th style="text-align:left;">
-Landsat OLI
-</th>
-<th style="text-align:left;">
-Sentinel 2
-</th>
-<th style="text-align:left;">
-MODIS MOD09A1
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-Blue
-</td>
-<td style="text-align:left;">
-B2*
-</td>
-<td style="text-align:left;">
-B2
-</td>
-<td style="text-align:left;">
-B3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Visible
-</td>
-<td style="text-align:left;">
-Green
-</td>
-<td style="text-align:left;">
-B3
-</td>
-<td style="text-align:left;">
-B3
-</td>
-<td style="text-align:left;">
-B4
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-Red
-</td>
-<td style="text-align:left;">
-B4
-</td>
-<td style="text-align:left;">
-B4
-</td>
-<td style="text-align:left;">
-B1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Infrared
-</td>
-<td style="text-align:left;">
-IR
-</td>
-<td style="text-align:left;">
-B5
-</td>
-<td style="text-align:left;">
-B8
-</td>
-<td style="text-align:left;">
-B2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Shortwave Infrared (SWIR) 1
-</td>
-<td style="text-align:left;">
-SWIR1
-</td>
-<td style="text-align:left;">
-B6
-</td>
-<td style="text-align:left;">
-B11
-</td>
-<td style="text-align:left;">
-B6
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Shortwave Infrared (SWIR) 2
-</td>
-<td style="text-align:left;">
-SWIR2
-</td>
-<td style="text-align:left;">
-B7
-</td>
-<td style="text-align:left;">
-B12
-</td>
-<td style="text-align:left;">
-B7
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Spatial resolution (pixel size)
-</td>
-<td style="text-align:left;">
-<ul>
-<li></td>
-<td style="text-align:left;">
-30 m
-</td>
-<td style="text-align:left;">
-10 m(B2-B8) and 20m (B11-B12)
-</td>
-<td style="text-align:left;">
-500 m
-</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
+<p><img src="figures/tables/Table_3.1.JPG" /></p>
 <p>*B is notation for satellite image band<br />
 Examples of popularly used image indices in mapping salt-affected soils are normalized salinity index (NSI), salinity index (SI), soil adjusted vegetation index (SAVI), vegetation soil salinity index (VSSI), normalized difference salinity index (NDSI), normalized difference vegetation index (NDVI), salinity ratio (SR), canopy response salinity index (CRSI), and brightness index (BI) (Gorji et al., 2019). They are summarized in Table
 3.2. These indices have been variously used either alone or in combination to model soil surface salinity characteristics.</p>
@@ -446,8 +307,11 @@ Examples of popularly used image indices in mapping salt-affected soils are norm
 <h2><span class="header-section-number">3.3</span> Methods based on soil indicators of salts</h2>
 <p>Soil indicators provide evidence of the presence of salts in the soil and occurrence of salt-affected soils. They are traditionally used in most soil classification schemes to identify the soil profiles and soil types belonging to the group of salt-affected soil (Soil Survey Staff, 1999; IUSS Working Group WRB, 2015; Craig and Hempel, 2017). Soil indicators of salt-affected soils are also used to quantify the intensity of salt problems in the soil (Table 2.4). They are also used to calibrate other methods for mapping salt-affected soils. Hence, they play a central role in assessing salt-affected soils and should therefore be the foundation for developing soil information of salt-affected soils.
 Three types of applications exist in the literature for mapping salt-affected soils using soil indicators: 1) mapping the soil attributes and classifying the output maps, 2) mapping classes derived from the soil attributes, and 3) classifying calibrated maps of electromagnetic induction outputs or remote sensing images (Figure 3.5) (Triantafilis et al., 2001; Taghizadeh-Mehrjardi et al., 2019).</p>
-<p><img src="figures/images/Figure3.5.jpg" alt="Figure 3.4: Approaches for using soil indicators in mapping salt-affected soils" />
-Applications using calibrated models with EMI are popularly used in mapping soil salinity. In this case, EMI data are calibrated with measured EC on a select sample set and the results used to map soil salinity (Lesch et al., 1992). Farzamian et al. (2019) recently tested the efficacy of local and regional models of this approach to improve its wide adoption. Mapping approaches involving extrapolation of pre-classified classes of salt-affected soils are also available in the literature. These approaches resemble the soil-map based method except that the input data are georeferenced soil attributes. They are not very popular owing to the challenges with extrapolation of categorical attributes (Jafari et al., 2012). Classifying spatially interpolated soil attributes is also another way of mapping salt-affected soils. In this case, the georeferenced soil indicators are first interpolated then the resulting maps are classified into maps of salt- affected soils (Zurqani et al., 2018). This approach was tested by Wicke et al. (2011) to produce a global map of salt-affected soils (Figure 3.6).</p>
+<div class="figure">
+<img src="figures/images/Figure3.5.jpg" alt="" />
+<p class="caption">Figure 3.4: Approaches for using soil indicators in mapping salt-affected soils</p>
+</div>
+<p>Applications using calibrated models with EMI are popularly used in mapping soil salinity. In this case, EMI data are calibrated with measured EC on a select sample set and the results used to map soil salinity (Lesch et al., 1992). Farzamian et al. (2019) recently tested the efficacy of local and regional models of this approach to improve its wide adoption. Mapping approaches involving extrapolation of pre-classified classes of salt-affected soils are also available in the literature. These approaches resemble the soil-map based method except that the input data are georeferenced soil attributes. They are not very popular owing to the challenges with extrapolation of categorical attributes (Jafari et al., 2012). Classifying spatially interpolated soil attributes is also another way of mapping salt-affected soils. In this case, the georeferenced soil indicators are first interpolated then the resulting maps are classified into maps of salt- affected soils (Zurqani et al., 2018). This approach was tested by Wicke et al. (2011) to produce a global map of salt-affected soils (Figure 3.6).</p>
 <div class="figure">
 <img src="figures/images/Figure3.6.jpg" alt="" />
 <p class="caption">Figure 3.6: Global distribution of salt-affected soils (Source: Wicke et al., 2011)</p>
@@ -460,251 +324,10 @@ Applications using calibrated models with EMI are popularly used in mapping soil
 <img src="figures/tables/Table_3.3.PNG" /></p>
 <div id="measured-soil-properties" class="section level3">
 <h3><span class="header-section-number">3.4.1</span> Measured soil properties</h3>
-<p>Measured soil properties for classifying salt problems in the soil are given in Table 3.4. Soluble ions in this category include Sodium (Na<sup>+</sup>), Calcium (Ca<sup>2+</sup>), Magnesium (Mg<sup>2+</sup>), Potassium (K+), Chloride (Cl<sup>-</sup>), Sulphate (SO<sup>-2</sup>), Carbonate (CO<sup>-2</sup>), Bicarbonate (HCO<sup>-</sup>) and Nitrates (NO<sup>-</sup>). They are useful in identification of the dominant salts and types of salt-affected soils. Electrical conductivity (EC), total soluble salts (TSS), total soluble cations (TSC), and total dissolved solids (TDS) are integral measures of salt concentration in the soil. This book recommends a minimum data set for classifying salt-affected soils as EC, pH and either ESP or SAR because of the recommendations given by the popular salt classification schemes (Table 2.1).
+<p>Measured soil properties for classifying salt problems in the soil are given in Table 3.4. Soluble ions in this category include Sodium (Na<sup>+</sup>), Calcium (Ca<sup>2+</sup>), Magnesium (Mg<sup>2+</sup>), Potassium (K<sup>+</sup>), Chloride (Cl<sup>-</sup>), Sulphate (SO<sup>-2</sup>), Carbonate (CO<sup>-2</sup>), Bicarbonate (HCO<sup>-</sup>) and Nitrates (NO<sup>-</sup>). They are useful in identification of the dominant salts and types of salt-affected soils. Electrical conductivity (EC), total soluble salts (TSS), total soluble cations (TSC), and total dissolved solids (TDS) are integral measures of salt concentration in the soil. This book recommends a minimum data set for classifying salt-affected soils as EC, pH and either ESP or SAR because of the recommendations given by the popular salt classification schemes (Table 2.1).
 Table 3.4: Summary soil properties for mapping salinity</p>
-<em>Table 3.4: Summary soil properties for mapping salinity</em>
-<table class="table table-striped" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;">
-Property
-</th>
-<th style="text-align:left;">
-Notation
-</th>
-<th style="text-align:left;">
-Units
-</th>
-<th style="text-align:left;">
-Description
-</th>
-<th style="text-align:left;">
-Measurement method
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-Electrical conductivity
-</td>
-<td style="text-align:left;">
-ECSE
-</td>
-<td style="text-align:left;">
-dS/m
-</td>
-<td style="text-align:left;">
-EC (SE*)
-</td>
-<td style="text-align:left;">
-Saturated soil paste extract
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-EC
-</td>
-<td style="text-align:left;">
-dS/m
-</td>
-<td style="text-align:left;">
-EC of soil solution
-</td>
-<td style="text-align:left;">
-Other soil extracts (1:n mix
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-= soil:water mix)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-ECa
-</td>
-<td style="text-align:left;">
-dS/m
-</td>
-<td style="text-align:left;">
-Apparent EC
-</td>
-<td style="text-align:left;">
-EC of bulk soil in-situ (EMI, TDR, etc.)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Salt content
-</td>
-<td style="text-align:left;">
-TSS
-</td>
-<td style="text-align:left;">
-mg/L
-</td>
-<td style="text-align:left;">
-Total soluble salts
-</td>
-<td style="text-align:left;">
-Evaporation of saturated soil paste extract
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-ions
-</td>
-<td style="text-align:left;">
-mg/L
-</td>
-<td style="text-align:left;">
-Soluble ions
-</td>
-<td style="text-align:left;">
-Photometry/spectrometry
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Reaction
-</td>
-<td style="text-align:left;">
-pH
-</td>
-<td style="text-align:left;">
-<ul>
-<li></td>
-<td style="text-align:left;">
-Soil pH (water)
-</td>
-<td style="text-align:left;">
-pH meter/ glass electrode
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-Ionic ratios
-</td>
-<td style="text-align:left;">
-SAR
-</td>
-<td style="text-align:left;">
-<ul>
-<li></td>
-<td style="text-align:left;">
-Sodium Adsorption
-</td>
-<td style="text-align:left;">
-Ratio = sodium (Na) ions/(Mg and Ca ions)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-ESP
-</td>
-<td style="text-align:left;">
-<ul>
-<li></td>
-<td style="text-align:left;">
-Exchangeable Sodium
-</td>
-<td style="text-align:left;">
-Ratio = exchangeable Na*100/CEC**)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-Sodium
-</td>
-<td style="text-align:left;">
-<ul>
-<li></td>
-<td style="text-align:left;">
-Sodium-chloride - sulphate ions
-</td>
-<td style="text-align:left;">
-Ratio = Na ions/(sum of Cl and SO4 ions)
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-carbonate
-</td>
-<td style="text-align:left;">
-<ul>
-<li></td>
-<td style="text-align:left;">
-Carbonate-chloride- sulphate
-</td>
-<td style="text-align:left;">
-Ratio = sum (carbonate &amp;
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-bicarbonate) /sum (Cl &amp; SO4) ions
-</td>
-</tr>
-</tbody>
-</table></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
+<p><em>Table 3.4: Summary soil properties for mapping salinity</em>
+<img src="figures/tables/Table_3.4.png" /></p>
 </div>
 <div id="bulk-soil-properties-and-soil-maps" class="section level3">
 <h3><span class="header-section-number">3.4.2</span> Bulk-soil properties and soil maps</h3>
@@ -720,9 +343,14 @@ Land cover/use information represent the biotic and anthropogenic activities inf
 <div id="other-ancillary-data" class="section level3">
 <h3><span class="header-section-number">3.4.4</span> Other ancillary data</h3>
 <p>Other ancillary data for mapping salt-affected soils are administrative boundaries and spatial data of other drivers of salt problems in the soil (Figure 3.7). Spatial data of other drivers of salt problems are maps of hydrogeology (groundwater quality and depth to groundwater level), soil degradation, proximity to coastline, and flood-prone areas.</p>
-<p><img src="figures/images/Figure3.7.jpg" alt="Figure 3.7: Data requirements for mapping salt-affected soils" /><br />
-### Conversion models<br />
-Electrical conductivity determined on saturated soil paste extract (ECSE in dS/m) is the preferred EC for classifying salt-affected soils. However, many soil laboratories don’t analyse ECSE due to the cumbersome laboratory procedures involved with its determination and long turn-around time for analysing many samples. Instead they use other extracts, such as from 1:5 soil:water mix (1 part of soil in 5 parts of water), 1:2.5 solutions, etc (Landon, 1984). Proposals have been made in the literature to calibrate EC determined from other soil extracts to the ECSE equivalent (Hogg and Henry, 1984, Ozcan et al., 2006; Sonmez et al., 2008; Kargas et al., 2018). These proposals depend on the soil texture, organic matter content, temperature, and measured ECS. A generic framework in these proposals for converting EC to ECSE is as follows:</p>
+<div class="figure">
+<img src="figures/images/Figure3.7.jpg" alt="" />
+<p class="caption">Figure 3.7: Data requirements for mapping salt-affected soils</p>
+</div>
+</div>
+<div id="conversion-models" class="section level3">
+<h3><span class="header-section-number">3.4.5</span> Conversion models</h3>
+<p>Electrical conductivity determined on saturated soil paste extract (ECSE in dS/m) is the preferred EC for classifying salt-affected soils. However, many soil laboratories don’t analyse ECSE due to the cumbersome laboratory procedures involved with its determination and long turn-around time for analysing many samples. Instead they use other extracts, such as from 1:5 soil:water mix (1 part of soil in 5 parts of water), 1:2.5 solutions, etc (Landon, 1984). Proposals have been made in the literature to calibrate EC determined from other soil extracts to the ECSE equivalent (Hogg and Henry, 1984, Ozcan et al., 2006; Sonmez et al., 2008; Kargas et al., 2018). These proposals depend on the soil texture, organic matter content, temperature, and measured ECS. A generic framework in these proposals for converting EC to ECSE is as follows:</p>
 <p><span class="math display">\[\begin{equation}
 \tag{3.1}
 EC_{SE} = f(EC_{s,texture,carbon,temperature}+ \varepsilon )

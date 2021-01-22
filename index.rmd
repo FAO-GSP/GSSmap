@@ -66,23 +66,23 @@ Yusuf Yigini
 
 ## Contributors{-}
 
-Christian Thine Omuto   (Global Soil Partnership, FAO)  
-El Mobarak A. Abdelmagid    (Agriculture research centre (ARC), Sudan)  
-Nuha Muhammed   (Agriculture research centre (ARC), Sudan)  
-Ronald Vargas   (Global Soil Partnership, FAO)  
-Kostiantyn Viatkin    (Global Soil Partnership, FAO)  
-Yigini Yusuf    (Global Soil Partnership, FAO)  
-Maria Konyuskova   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
-Rosa Poch   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
-Mohammad Jamal Khan   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
-Megan Balks    (Intergovernmental Technical Panel on Soils (ITPS), FAO)    
-Attia Rafla    (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
-Ashok Patra   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
-Siosiua Halavatau   (Intergovernmental Technical Panel on Soils (ITPS),FAO)  
-Lydia Chabala   (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
-Samuel Francke    (Intergovernmental Technical Panel on Soils (ITPS), FAO)  
-Isabelle Verbeke (Global Soil Partnership, FAO)  
-Matteo Sala (Global Soil Partnership, FAO)  
+Christian Thine Omuto -  *Global Soil Partnership, FAO * 
+El Mobarak A. Abdelmagid  -  *Agriculture research centre ARC, Sudan*  
+Nuha Muhammed - *Agriculture research centre ARC, Sudan* 
+Ronald Vargas -  *Global Soil Partnership, FAO *  
+Kostiantyn Viatkin  -  *Global Soil Partnership, FAO *  
+Yigini Yusuf  -  *Global Soil Partnership, FAO *  
+Maria Konyuskova  -  *Intergovernmental Technical Panel on Soils ITPS, FAO*  
+Rosa Poch -  *Intergovernmental Technical Panel on Soils ITPS, FAO*  
+Mohammad Jamal Khan -  *Intergovernmental Technical Panel on Soils ITPS, FAO*  
+Megan Balks -  *Intergovernmental Technical Panel on Soils ITPS, FAO*    
+Attia Rafla  - *Intergovernmental Technical Panel on Soils ITPS, FAO*  
+Ashok Patra   -*Intergovernmental Technical Panel on Soils ITPS, FAO*  
+Siosiua Halavatau -  *Intergovernmental Technical Panel on Soils ITPS,FAO*  
+Lydia Chabala -  *Intergovernmental Technical Panel on Soils ITPS, FAO*  
+Samuel Francke  -  *Intergovernmental Technical Panel on Soils ITPS, FAO*  
+Isabelle Verbeke  -  *Global Soil Partnership, FAO *  
+Matteo Sala -  *Global Soil Partnership, FAO *  
 
 
 **Recommended citation:**
