@@ -17,13 +17,15 @@ Input data provide evidence of occurrence of salt-affected soils. Their characte
 
 *Table 4.1: Minimum input data requirements for large-area mapping of salt-affected soils*
 ![](figures/tables/Table_4.1.PNG)  
-[^1] [^2] [^3] [^4] [^5]  
-[^1]: WOSIS: https://www.isric.org/explore/wosis
-[^2]: HWSD:http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-
-v12/en/
-[^3]: WorldClim: https://www.worldclim.org/
-[^4]: ESA: https://www.esa-landcover-cci.org/
-[^5]: USGS: https://earthexplorer.usgs.gov/
+
+
+^1^: WOSIS: https://www.isric.org/explore/wosis  
+^2^: HWSD:http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-
+v12/en/  
+^3^: WorldClim: https://www.worldclim.org/  
+^4^: ESA: https://www.esa-landcover-cci.org/  
+^5^: USGS: https://earthexplorer.usgs.gov/  
+
 
 
 ###	Computer and software
@@ -41,7 +43,8 @@ Internet connectivity is also an important aspect of the computer and software r
 The case study for demonstration indicator-based spatial mapping of salt-affected soil was obtained is northern Sudan. The area stretches from the Latitude 22$^\circ$ 13' 30.3" to 16$^\circ$ 30' 28.59" North and from the Longitude 32$^\circ$ 41' 3.55" to 25$^\circ$ 0' 0" East (Figure 4.2). Input soil data from this area consist of 379 profile locations which were surveyed in 2018 at various soil depths between 0 and 200 cm. The data includes
 ECSE (dS/m), pH, ESP, soluble ions (Soluble Na^+^, SO~4~^2-^, CO~3~^2-^, HCO~3~^-^, and Cl^-^) in cmol/kg and were determined using the saturated soil paste extract approach. This data is available at https://doi.org/10.1594/PANGAEA.920201
 
-![Location of soil profile information in Northern Sudan](figures/images/Figure4.2.jpg) 
+![Location of soil profile information in Northern Sudan](figures/images/Figure4.2.jpg)
+
 Data on soil forming factors include multispectral remote images, remote sensing image of digital elevation model (DEM), and maps of land cover types, geology, and mean annual rainfall amount (Table 4.2). The input data also include shapefiles of the case-study boundary and major towns and raster map of aquifer types.  
 
 *Table 4.2: Case-study input data from northern Sudan (source: Government of Sudan, http://susis.sd/)*  
@@ -298,9 +301,15 @@ R software and its contributed packages are the principal software for implement
 These packages and their dependencies are installed using the following commands in R
 
 ```{r,eval=FALSE}
-install.packages(c("raster", "sp", "rgdal", "car", "carData", "dplyr", "spacetime", "gstat", "automap", "randomForest", "fitdistrplus", "e1071", "caret", "soilassessment", "soiltexture", "GSIF", "aqp", "plyr", "Hmisc", "corrplot", "factoextra", "spup", "purrr", "lattice", "ncf", "npsurv", "lsei", "qrnn", "nnet", "mda", "RColorBrewer", "vcd", "readxls","maptools","neuralnet","psych"))
+install.packages(c("raster", "sp", "rgdal", "car", "carData", "dplyr", "spacetime", "gstat", "automap", "randomForest", "fitdistrplus", "e1071", "caret", "soilassessment", "soiltexture", "GSIF", "aqp", "plyr", 
+                   "Hmisc", "corrplot", "factoextra", "spup", "purrr", "lattice", "ncf", "npsurv", "lsei",
+                   "qrnn", "nnet", "mda", "RColorBrewer", "vcd", "readxls","maptools","neuralnet","psych"))
 
-library(sp); library(foreign); library(rgdal); library(car);library(carData); library(maptools) library(spacetime); library(gstat); library(automap);library(randomForest);library(fitdistrplus); library(e1071); library(caret); library(raster); library(soilassessment); library(soiltexture); library(GSIF); library(aqp); library(plyr); library(Hmisc); library(corrplot); library(factoextra) library(spup); library(purrr); library(lattice);library(ncf);library(npsurv); library(lsei); library(nnet); library(class); library(mda); library(RColorBrewer); library(vcd); library(grid); library(neuralnet);library(readxl); library(psych);library(qrnn); library(dplyr)
+library(sp); library(foreign); library(rgdal); library(car);library(carData); library(maptools) library(spacetime); library(gstat); library(automap);library(randomForest);library(fitdistrplus); 
+library(e1071); library(caret); library(raster); library(soilassessment); library(soiltexture); 
+library(GSIF); library(aqp); library(plyr); library(Hmisc); library(corrplot); library(factoextra) 
+library(spup); library(purrr); library(lattice);library(ncf);library(npsurv); library(lsei); 
+library(nnet); library(class); library(mda); library(RColorBrewer); library(vcd); library(grid); library(neuralnet);library(readxl); library(psych);library(qrnn); library(dplyr)
 
 ```
 
@@ -330,7 +339,7 @@ soil=readOGR(".","soildata") # Importing soildata.shp as shapefile
 
 Spreadsheet data can also be imported directly as excel data or CSV using appropriate commands such as
 ```{r,eval=FALSE}
-soil = read_xlsx("soildata.xlsx") 
+soil=read_xlsx("soildata.xlsx") 
 ```
  for importing MS Excel or 
 
@@ -348,13 +357,9 @@ predictors$ls=readGDAL("ls.asc")$band1
 predictors$valley=readGDAL("valley.mpr")$band1
 predictors$geology=readGDAL("geology.mpr")$band1
 
-
-
 predictors$BBlue=readGDAL("BBlue.mpr")$band1
 predictors$swir1=readGDAL("swir1.asc")$band1
 predictors$swir2=readGDAL("swir2.tif")$band1
-
-
 
 predictors$dem=predictors$band1 # for replacing the first layer
 predictors$band1=NULL # for removing replaced layer
@@ -390,7 +395,8 @@ Statistical distribution of the GIS layers may also need to be checked if it req
 
 ```{r,eval=FALSE}
 # Check for frequency distribution of the GIS layers
-hist(predictors@data[,c("dem","slope","loncurve","cnbl","valley","lcover","rain", "geology","pgeology")])
+hist(predictors@data[,c("dem","slope","loncurve","cnbl","valley","lcover","rain",
+                        "geology","pgeology")])
 
 
 # Step 1-3: Derive the remote sensing indices
@@ -434,7 +440,8 @@ VSSI and BI image indices showed slight skew. Test with square-root transformati
 # Step 1-5: Perform PCA and select the first PCs accounting for over 95% of the image indices' variation
 
 # Extract the image layers
-predicters=predictors@data[,c("SI1","SI2","SI3","SI4","SI5","SI6","SAVI","VSSI","NDS I","NDVI","SR","CRSI", "BI")]
+predicters=predictors@data[,c("SI1","SI2","SI3","SI4","SI5","SI6","SAVI","VSSI",
+                              "NDS I","NDVI","SR","CRSI", "BI")]
 soil.cor=cor(predicters)
 corrplot(soil.cor,method="number",number.cex = 0.8) # Figure 5.3a
 pca<-prcomp(predicters[], scale=TRUE)
@@ -508,7 +515,9 @@ colnames(SSCP_norm)[1:3] = paste0(colnames(SSCP_norm)[1:3],"_nm")
 SSCP = cbind(SSCP, round(SSCP_norm, 2))
 SSCP$CLAY=SSCP$CLAY_nm;SSCP$SILT=SSCP$SILT_nm;SSCP$SAND=SSCP$SAND_nm
 rm(SSCP_norm)
-soil0=cbind(soil0,"TEXCLASS" =TT.points.in.classes(tri.data =SSCP[, c('CLAY', 'SILT', 'SAND')],class.sys = "USDA.TT",	PiC.type	= "t",collapse	= ', '))
+soil0=cbind(soil0,"TEXCLASS" =
+              TT.points.in.classes(tri.data =SSCP[, c('CLAY', 'SILT', 'SAND')],class.sys = "USDA.TT",
+                                   PiC.type	= "t",collapse	= ', '))
 soil0$TEXCLASS=as.factor(soil0$TEXCLASS)
 soil0$TEXCLASS1=as.numeric(soil0$TEXCLASS)
 summary(soil0$TEXCLASS)
@@ -519,7 +528,8 @@ summary(soil0$TEXCLASS)
 #Cl	Lo Lo, SiLo	LoSa	SaClLo	SaLo	SiLo
 #2	51	2	9	1	104	22
 
-soil0$TEXCLASS1=dplyr::recode(soil0$TEXCLASS,Cl=1, ClLo =7, Lo=11, LoSa=10, Sa=12, SaCl=8, SaClLo=9,SaLo=5, SiCl=2,SiClLo=3,SiLo=4,Si=6,CS=13,MS=14,HCL=16,FS=15)
+soil0$TEXCLASS1=dplyr::recode(soil0$TEXCLASS,Cl=1, ClLo =7, Lo=11, LoSa=10,
+                              Sa=12, SaCl=8, SaClLo=9,SaLo=5, SiCl=2,SiClLo=3,SiLo=4,Si=6,CS=13,MS=14,HCL=16,FS=15)
 
 summary(soil0$TEXCLASS1)
 #Min.	1st Qu.	Median	Mean	3rd Qu.	Max.  1.000	5.000	5.000		6.691	11.000		11.000
@@ -658,13 +668,15 @@ This harmonization is done to transform the frequency distribution to normal dis
 ```{r,eval=FALSE}
 #Step 1-9: Harmonization of statistical distribution
 
-summary(soil1$X0.30.cm)
-Min.	1st Qu.	Median		Mean	3rd Qu.	Max. 0.0000		0.6291	1.8709	6.6812		5.3121 154.2463
+#summary(soil1$X0.30.cm)
+#Min.	1st Qu.	Median		Mean	3rd Qu.	Max. 0.0000		0.6291	1.8709	6.6812		5.3121 154.2463
 
 soil1$dummy=(soil1$EC)+0.001 # add "+0.001" if minimum X0.30.cm is zero
-hist(soil1$dummy, main="Frequency distribution (before transformation)", xlab="Harmo nized EC (dS/m)")
+hist(soil1$dummy, main="Frequency distribution (before transformation)", 
+     xlab="Harmo nized EC (dS/m)")
 soil1$Tran=(soil1$dummy^(as.numeric(car::powerTransform(soil1$dummy, family ="bcPowe r")["lambda"]))-1)/(as.numeric(car::powerTransform(soil1$dummy, family ="bcPower")["la mbda"]))
-hist(soil1$Tran, main="Frequency distribution (after transformation)",xlab="Harmoniz ed EC (dS/m)")
+hist(soil1$Tran, main="Frequency distribution (after transformation)",
+     xlab="Harmoniz ed EC (dS/m)")
 ```
 
 Histogram plot of the empirical distributions before and after transformation are given in Figure 5.7.
@@ -830,8 +842,10 @@ Prediction limits on the Box-Cox transformed values at 95% confidence interval a
 ```{r,eval=FALSE}
 #Step 2-4: Accuracy assessment
 cor(df.testa$Strain,df.testa$dummy)^2 [1] 0.9950319
-{plot(df.testa$Strain~df.testa$dummy, xlab="Measured ECse",ylab="Modelled ECse", mai n="Accuracy assessment on hold-out samples")
-+	abline(a=0,b=1,lty=20, col="blue")} # Figure 5.9
+{plot(df.testa$Strain~df.testa$dummy, 
+      xlab="Measured ECse",ylab="Modelled ECse", 
+      main="Accuracy assessment on hold-out samples")
+	abline(a=0,b=1,lty=20, col="blue")} # Figure 5.9
 
 ```
 
@@ -839,9 +853,11 @@ cor(df.testa$Strain,df.testa$dummy)^2 [1] 0.9950319
 
 ```{r,eval=FALSE}
 Bias=mean(df.testa$Strain-df.testa$dummy,na.rm=TRUE)
-RMSE=sqrt(sum(df.testa$Strain-df.testa$dummy,na.rm=TRUE)^2/length((df.testa$Strain-d f.testa$dummy)))
+RMSE=sqrt(sum(df.testa$Strain-df.testa$dummy,na.rm=TRUE)^2
+          /length((df.testa$Strain-d f.testa$dummy)))
 Rsquared=cor(df.testa$Strain,df.testa$dummy)^2
-NSE=1-sum(df.testa$Strain-df.testa$dummy,na.rm=TRUE)^2/sum((df.testa$Strain-mean(df. testa$dummy,na.rm=TRUE))^2,na.rm=TRUE)
+NSE=1-sum(df.testa$Strain-df.testa$dummy,na.rm=TRUE)^2
+/sum((df.testa$Strain-mean(df. testa$dummy,na.rm=TRUE))^2,na.rm=TRUE)
 statia=data.frame(Bias,RMSE,Rsquared,NSE);View(statia)
 write.csv(statia,file = "EC0_30_validmodel_stats.csv")
 
@@ -855,7 +871,10 @@ The model can now be used to produce spatial prediction of the target variable (
 lmbda1=(as.numeric(powerTransform(soil1$dummy, family ="bcPower")["lambda"]))
 predictors$ECte=predicta(rf.ec,predictors)
 coordinates(df.testa)=~Longitude+Latitude
-proj4string(df.testa)=CRS("+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +ellps= WGS84 +towgs84=0,0,0") # Make sure to use correct CRS
+proj4string(df.testa)=CRS("+proj=utm +zone=36
+                          +datum=WGS84 +units=m +no_defs 
+                          +ellps= WGS84 +towgs84=0,0,0") 
+# Make sure to use correct CRS
 predicters.ov1=over(df.testa, predictors)
 df.testa$Predre=predicters.ov1$ECse
 cor(df.testa$dummy,df.testa$Predre)^2 [1] 0.9978655
@@ -901,7 +920,7 @@ where $y$ is the target soil variable to be mapped, $X$ is a vector of spatial p
 \begin{equation}
 \tag{5.7}
 y - \bar{y} = [f(X) + \varepsilon] - \bar{f}(X)\\
-= [f(x) -\]+ \varepsilon
+= [f(x) -\bar{f}(x)]+ \varepsilon
 \end{equation}
 
 
@@ -910,13 +929,16 @@ In this Book, the uncertain quantity is estimated using prediction width at 95% 
 ```{r, eval =FALSE}
 #Step 2-6: Uncertainty assessment
 soil6a=soil1[,c("Tran")]
-predictors6a=predictors[c("dem","slope","cnbl","lcover","loncurve","rain","pgeology"
+predictors6a=predictors[c("dem","slope","cnbl",
+                          "lcover","loncurve","rain","pgeology"
 ,"geology","ls","valley","PCA1","PCA2","PCA3","PCA4","PCA5")]
 
 pred_uncerta=predUncertain(soil6a,predictors6a,3,95,"qrandomforest")
 
 
-spplot(pred_uncerta, "pred_width", scales = list(draw = TRUE),col.regions=heat.color s(20,rev = TRUE)) + spplot(df.testa,"dummy",pch=3,cex=0.4) #Figure 6.11
+spplot(pred_uncerta, "pred_width", scales = list(draw = TRUE),
+       col.regions=heat.color s(20,rev = TRUE)) 
+ spplot(df.testa,"dummy",pch=3,cex=0.4) #Figure 6.11
 
 
 #Step 2-7: Exporting the uncertainty maps
@@ -958,7 +980,9 @@ summary(predictors$salty)
 predictors$saltiness=classCode(predictors$salty,"saltclass")
 spplot(predictors["salty"])
 spplot(predictors["saltiness"]) # Figure 5.12a
-predictors$Salt_affected=saltSeverity(predictors$ECse,predictors$PH,predictors$ESP," FAO")	predictors$saltaffectedness=classCode(predictors$Salt_affected,"saltseverity")
+predictors$Salt_affected=saltSeverity(predictors$ECse,predictors$PH,predictors$ESP," FAO")
+
+predictors$saltaffectedness=classCode(predictors$Salt_affected,"saltseverity")
 spplot(predictors["saltaffectedness"]) # Figure 5.12b
 
 ```
@@ -985,7 +1009,8 @@ soilv=readOGR(".","validation_harmonized")
 soilv=subset(soilv,soilv$Horizon==1)
 soilv$salt_affected1=saltSeverity(soilv$EC,soilv$pH,soilv$ESP,"FAO")
 summary(soilv$salt_affected1)
-# Min. 1st Qu.	Median	Mean 3rd Qu.	Max. 3.0	6.0		8.0		8.5	#11.5	15.0
+# Min. 1st Qu.	Median	Mean 3rd Qu.	Max. 3.0	6.0		8.0		8.5	
+#11.5	15.0
 
 soilv$saltaffectedness1=classCode(soilv$salt_affected1,"saltseverity")
 summary(soilv$saltaffectedness1)
@@ -1014,7 +1039,9 @@ A visual comparison shows that the validation datasets had points classified as 
 
 ```{r, eval =FALSE}
 # Plot the confusion matrix and determine the Kappa index
-agreementplot(confusion(soilv$salt_affected, soilv$salt_affected1),main = "Accuracy assessment",xlab = "Class codes in holdout samples", ylab = "Class codes in map")
+agreementplot(confusion(soilv$salt_affected, soilv$salt_affected1),
+              main = "Accuracy assessment",xlab = "Class codes in holdout samples",
+              ylab = "Class codes in map")
 Kappa(confusion(soilv$salt_affected, soilv$salt_affected1)) 
 ```
 
@@ -1025,7 +1052,7 @@ Uncertainty assessment in salt-affected modelling is conceived as estimating unc
 
 ![Figure 5.14: Monte Carlo uncertainty estimation process](figures/images/Figure5.14.png)
 
-Development of marginal density functions uses statistical distribution parameters and correlation models (crm). Examples of statistical distribution parameters, which depend on the type of distribution, are the mean(??????????)  and  standard  variation  (????????)  for  normal  distribution  or  the  scale  (???)  and  rate  (??)  for  gamma distribution.
+Development of marginal density functions uses statistical distribution parameters and correlation models (crm). Examples of statistical distribution parameters, which depend on the type of distribution, are the mean $\bar{x}$ and  standard  variation $s$  for  normal  distribution  or  the  scale  $\lambda$  and  rate  $\alpha$  for  gamma distribution.
 The following steps describes the process for preparing the input indicator maps into raster file format, since the modules for uncertainty assessment were developed for the raster file format. The input maps are further converted into spatialPixelsDataFrame to facilitate mathematical operations on dataframes. It is important to check the probability distributions of the input data using the histogram function. Although MC simulations in Figure 5.14 are not strict on the type of the distribution, normal distribution is easy to sample. It's therefore recommended that normalized distributions be established from the input maps.  
 
 ```{r, eval = FALSE}
@@ -1073,9 +1100,16 @@ cor(values(ECte),values(PHde)); cor(values(ECte),values(ESPt)); cor(values(PHde)
 # [1] 0.3204495
 # [1] 0.2859129
 
-		salinityMUM = defineMUM(UMlist = list(EC_UM, PH_UM, ESP_UM), cormatrix = matrix(c(1, cor(values(ECte),values(PHde)), cor(values(ECte),values(ESPt)), cor(values(ECte), values(PHde)), 1, cor(values(PHde), values(ESPt)), cor(values(ECte), values(ESPt)), cor(values(PHde), values(ESPt)),1), nrow = 3, ncol = 3))
+salinityMUM = defineMUM(UMlist = list(EC_UM, PH_UM, ESP_UM), cormatrix = 
+                          matrix(c(1, cor(values(ECte),values(PHde)), 
+                                cor(values(ECte),values(ESPt)),
+                                cor(values(ECte), values(PHde)), 
+                                1, cor(values(PHde), values(ESPt)), 
+                                cor(values(ECte), values(ESPt)), 
+                                cor(values(PHde), values(ESPt)),1), 
+                                nrow = 3, ncol = 3))
 
-	class(salinityMUM)
+class(salinityMUM)
 #[1] "JointNumericSpatial"
 
 ```
@@ -1120,12 +1154,12 @@ propagate through the classification model into the final classified map.
 ```{r, eval = FALSE}
 #Step 3-7: Uncertainty propagation through the classification model
 	Salinity_model_raster <- function (EC1,PH1,ESP1){
-+	ww=EC1
-+	ww=raster(ww)
-+	ww$salt=saltSeverity(values(EC1),values(PH1),values(ESP1),"FAO")
-+	ww=ww$salt; names(ww)=c("salt")
-+	ww
-+ }
+  ww=EC1
+  ww=raster(ww)
+	ww$salt=saltSeverity(values(EC1),values(PH1),values(ESP1),"FAO")
+	ww=ww$salt; names(ww)=c("salt")
+	ww
+}
 
 	v <- list()
 	v[[1]] = map(1:100, function(x){input_sample[[x]]})
@@ -1160,7 +1194,9 @@ Overall classification accuracy of salt-affected topsoils (0-30 cm) was 65%. The
 The above steps for developing maps of salt-affected soils and associated uncertainty maps should be repeated for 30-100 cm soil depths.
 
 ![Figure 5.17: Map of salt-affected topsoil (0-30 cm) in study area](figures/images/Figure5.17.jpg)
-##	Map update  
+
+##	Map update 
+
 ###	Update needs assessment  
 Salt problem in the soil is a dynamic phenomenon owing to the changing characteristics of its drivers. It is therefore expected that maps of salt-affected soils will also change with time. Furthermore, the spatial coverage of measured soil indicators is not always exhaustive owing to sampling limitations. Altogether, these factors emphasize the need for planning for updates. The following factors need consideration when planning update for salt-affected soil maps:
 

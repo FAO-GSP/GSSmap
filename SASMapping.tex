@@ -815,14 +815,14 @@ Multiscale mapping of salt-affected soils requires adequate coordination and mob
 Input data provide evidence of occurrence of salt-affected soils. Their characteristics influence and are also influenced by the specifications of the final outputs of the mapping exercise such as suitable soil depths, spatial resolution of the final maps, incorporation of uncertainty and accuracy assessment , and classification of the intensity of salt problems in the soil. Table 4.1 is an example summary of input data requirements for national, regional and global mapping of salt-affected soils.
 
 \emph{Table 4.1: Minimum input data requirements for large-area mapping of salt-affected soils}
-\includegraphics{figures/tables/Table_4.1.PNG}\\
-{[}\^{}1{]} {[}\^{}2{]} {[}\^{}3{]} {[}\^{}4{]} {[}\^{}5{]}\\
-{[}\^{}1{]}: WOSIS: \url{https://www.isric.org/explore/wosis}
-{[}\^{}2{]}: HWSD:\url{http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-}
-v12/en/
-{[}\^{}3{]}: WorldClim: \url{https://www.worldclim.org/}
-{[}\^{}4{]}: ESA: \url{https://www.esa-landcover-cci.org/}
-{[}\^{}5{]}: USGS: \url{https://earthexplorer.usgs.gov/}
+\includegraphics{figures/tables/Table_4.1.PNG}
+
+\textsuperscript{1}: WOSIS: \url{https://www.isric.org/explore/wosis}\\
+\textsuperscript{2}: HWSD:\url{http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-}
+v12/en/\\
+\textsuperscript{3}: WorldClim: \url{https://www.worldclim.org/}\\
+\textsuperscript{4}: ESA: \url{https://www.esa-landcover-cci.org/}\\
+\textsuperscript{5}: USGS: \url{https://earthexplorer.usgs.gov/}
 
 \hypertarget{computer-and-software}{%
 \subsection{Computer and software}\label{computer-and-software}}
@@ -847,7 +847,12 @@ Internet connectivity is also an important aspect of the computer and software r
 The case study for demonstration indicator-based spatial mapping of salt-affected soil was obtained is northern Sudan. The area stretches from the Latitude 22\(^\circ\) 13' 30.3" to 16\(^\circ\) 30' 28.59" North and from the Longitude 32\(^\circ\) 41' 3.55" to 25\(^\circ\) 0' 0" East (Figure 4.2). Input soil data from this area consist of 379 profile locations which were surveyed in 2018 at various soil depths between 0 and 200 cm. The data includes
 ECSE (dS/m), pH, ESP, soluble ions (Soluble Na\textsuperscript{+}, SO\textsubscript{4}\textsuperscript{2-}, CO\textsubscript{3}\textsuperscript{2-}, HCO\textsubscript{3}\textsuperscript{-}, and Cl\textsuperscript{-}) in cmol/kg and were determined using the saturated soil paste extract approach. This data is available at \url{https://doi.org/10.1594/PANGAEA.920201}
 
+\begin{figure}
+\centering
 \includegraphics{figures/images/Figure4.2.jpg}
+\caption{Location of soil profile information in Northern Sudan}
+\end{figure}
+
 Data on soil forming factors include multispectral remote images, remote sensing image of digital elevation model (DEM), and maps of land cover types, geology, and mean annual rainfall amount (Table 4.2). The input data also include shapefiles of the case-study boundary and major towns and raster map of aquifer types.
 
 \emph{Table 4.2: Case-study input data from northern Sudan (source: Government of Sudan, \url{http://susis.sd/})}
@@ -1280,9 +1285,15 @@ These packages and their dependencies are installed using the following commands
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{install.packages}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"raster"}\NormalTok{, }\StringTok{"sp"}\NormalTok{, }\StringTok{"rgdal"}\NormalTok{, }\StringTok{"car"}\NormalTok{, }\StringTok{"carData"}\NormalTok{, }\StringTok{"dplyr"}\NormalTok{, }\StringTok{"spacetime"}\NormalTok{, }\StringTok{"gstat"}\NormalTok{, }\StringTok{"automap"}\NormalTok{, }\StringTok{"randomForest"}\NormalTok{, }\StringTok{"fitdistrplus"}\NormalTok{, }\StringTok{"e1071"}\NormalTok{, }\StringTok{"caret"}\NormalTok{, }\StringTok{"soilassessment"}\NormalTok{, }\StringTok{"soiltexture"}\NormalTok{, }\StringTok{"GSIF"}\NormalTok{, }\StringTok{"aqp"}\NormalTok{, }\StringTok{"plyr"}\NormalTok{, }\StringTok{"Hmisc"}\NormalTok{, }\StringTok{"corrplot"}\NormalTok{, }\StringTok{"factoextra"}\NormalTok{, }\StringTok{"spup"}\NormalTok{, }\StringTok{"purrr"}\NormalTok{, }\StringTok{"lattice"}\NormalTok{, }\StringTok{"ncf"}\NormalTok{, }\StringTok{"npsurv"}\NormalTok{, }\StringTok{"lsei"}\NormalTok{, }\StringTok{"qrnn"}\NormalTok{, }\StringTok{"nnet"}\NormalTok{, }\StringTok{"mda"}\NormalTok{, }\StringTok{"RColorBrewer"}\NormalTok{, }\StringTok{"vcd"}\NormalTok{, }\StringTok{"readxls"}\NormalTok{,}\StringTok{"maptools"}\NormalTok{,}\StringTok{"neuralnet"}\NormalTok{,}\StringTok{"psych"}\NormalTok{))}
+\KeywordTok{install.packages}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"raster"}\NormalTok{, }\StringTok{"sp"}\NormalTok{, }\StringTok{"rgdal"}\NormalTok{, }\StringTok{"car"}\NormalTok{, }\StringTok{"carData"}\NormalTok{, }\StringTok{"dplyr"}\NormalTok{, }\StringTok{"spacetime"}\NormalTok{, }\StringTok{"gstat"}\NormalTok{, }\StringTok{"automap"}\NormalTok{, }\StringTok{"randomForest"}\NormalTok{, }\StringTok{"fitdistrplus"}\NormalTok{, }\StringTok{"e1071"}\NormalTok{, }\StringTok{"caret"}\NormalTok{, }\StringTok{"soilassessment"}\NormalTok{, }\StringTok{"soiltexture"}\NormalTok{, }\StringTok{"GSIF"}\NormalTok{, }\StringTok{"aqp"}\NormalTok{, }\StringTok{"plyr"}\NormalTok{, }
+                   \StringTok{"Hmisc"}\NormalTok{, }\StringTok{"corrplot"}\NormalTok{, }\StringTok{"factoextra"}\NormalTok{, }\StringTok{"spup"}\NormalTok{, }\StringTok{"purrr"}\NormalTok{, }\StringTok{"lattice"}\NormalTok{, }\StringTok{"ncf"}\NormalTok{, }\StringTok{"npsurv"}\NormalTok{, }\StringTok{"lsei"}\NormalTok{,}
+                   \StringTok{"qrnn"}\NormalTok{, }\StringTok{"nnet"}\NormalTok{, }\StringTok{"mda"}\NormalTok{, }\StringTok{"RColorBrewer"}\NormalTok{, }\StringTok{"vcd"}\NormalTok{, }\StringTok{"readxls"}\NormalTok{,}\StringTok{"maptools"}\NormalTok{,}\StringTok{"neuralnet"}\NormalTok{,}\StringTok{"psych"}\NormalTok{))}
 
-\KeywordTok{library}\NormalTok{(sp); }\KeywordTok{library}\NormalTok{(foreign); }\KeywordTok{library}\NormalTok{(rgdal); }\KeywordTok{library}\NormalTok{(car);}\KeywordTok{library}\NormalTok{(carData); }\KeywordTok{library}\NormalTok{(maptools) }\KeywordTok{library}\NormalTok{(spacetime); }\KeywordTok{library}\NormalTok{(gstat); }\KeywordTok{library}\NormalTok{(automap);}\KeywordTok{library}\NormalTok{(randomForest);}\KeywordTok{library}\NormalTok{(fitdistrplus); }\KeywordTok{library}\NormalTok{(e1071); }\KeywordTok{library}\NormalTok{(caret); }\KeywordTok{library}\NormalTok{(raster); }\KeywordTok{library}\NormalTok{(soilassessment); }\KeywordTok{library}\NormalTok{(soiltexture); }\KeywordTok{library}\NormalTok{(GSIF); }\KeywordTok{library}\NormalTok{(aqp); }\KeywordTok{library}\NormalTok{(plyr); }\KeywordTok{library}\NormalTok{(Hmisc); }\KeywordTok{library}\NormalTok{(corrplot); }\KeywordTok{library}\NormalTok{(factoextra) }\KeywordTok{library}\NormalTok{(spup); }\KeywordTok{library}\NormalTok{(purrr); }\KeywordTok{library}\NormalTok{(lattice);}\KeywordTok{library}\NormalTok{(ncf);}\KeywordTok{library}\NormalTok{(npsurv); }\KeywordTok{library}\NormalTok{(lsei); }\KeywordTok{library}\NormalTok{(nnet); }\KeywordTok{library}\NormalTok{(class); }\KeywordTok{library}\NormalTok{(mda); }\KeywordTok{library}\NormalTok{(RColorBrewer); }\KeywordTok{library}\NormalTok{(vcd); }\KeywordTok{library}\NormalTok{(grid); }\KeywordTok{library}\NormalTok{(neuralnet);}\KeywordTok{library}\NormalTok{(readxl); }\KeywordTok{library}\NormalTok{(psych);}\KeywordTok{library}\NormalTok{(qrnn); }\KeywordTok{library}\NormalTok{(dplyr)}
+\KeywordTok{library}\NormalTok{(sp); }\KeywordTok{library}\NormalTok{(foreign); }\KeywordTok{library}\NormalTok{(rgdal); }\KeywordTok{library}\NormalTok{(car);}\KeywordTok{library}\NormalTok{(carData); }\KeywordTok{library}\NormalTok{(maptools) }\KeywordTok{library}\NormalTok{(spacetime); }\KeywordTok{library}\NormalTok{(gstat); }\KeywordTok{library}\NormalTok{(automap);}\KeywordTok{library}\NormalTok{(randomForest);}\KeywordTok{library}\NormalTok{(fitdistrplus); }
+\KeywordTok{library}\NormalTok{(e1071); }\KeywordTok{library}\NormalTok{(caret); }\KeywordTok{library}\NormalTok{(raster); }\KeywordTok{library}\NormalTok{(soilassessment); }\KeywordTok{library}\NormalTok{(soiltexture); }
+\KeywordTok{library}\NormalTok{(GSIF); }\KeywordTok{library}\NormalTok{(aqp); }\KeywordTok{library}\NormalTok{(plyr); }\KeywordTok{library}\NormalTok{(Hmisc); }\KeywordTok{library}\NormalTok{(corrplot); }\KeywordTok{library}\NormalTok{(factoextra) }
+\KeywordTok{library}\NormalTok{(spup); }\KeywordTok{library}\NormalTok{(purrr); }\KeywordTok{library}\NormalTok{(lattice);}\KeywordTok{library}\NormalTok{(ncf);}\KeywordTok{library}\NormalTok{(npsurv); }\KeywordTok{library}\NormalTok{(lsei); }
+\KeywordTok{library}\NormalTok{(nnet); }\KeywordTok{library}\NormalTok{(class); }\KeywordTok{library}\NormalTok{(mda); }\KeywordTok{library}\NormalTok{(RColorBrewer); }\KeywordTok{library}\NormalTok{(vcd); }\KeywordTok{library}\NormalTok{(grid); }\KeywordTok{library}\NormalTok{(neuralnet);}\KeywordTok{library}\NormalTok{(readxl); }\KeywordTok{library}\NormalTok{(psych);}\KeywordTok{library}\NormalTok{(qrnn); }\KeywordTok{library}\NormalTok{(dplyr)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1326,7 +1337,7 @@ Spreadsheet data can also be imported directly as excel data or CSV using approp
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{soil =}\StringTok{ }\KeywordTok{read_xlsx}\NormalTok{(}\StringTok{"soildata.xlsx"}\NormalTok{) }
+\NormalTok{soil=}\KeywordTok{read_xlsx}\NormalTok{(}\StringTok{"soildata.xlsx"}\NormalTok{) }
 \end{Highlighting}
 \end{Shaded}
 
@@ -1348,13 +1359,9 @@ for importing CSV filetype. GIS rater files are imported using either readGDAL o
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{valley=}\KeywordTok{readGDAL}\NormalTok{(}\StringTok{"valley.mpr"}\NormalTok{)}\OperatorTok{$}\NormalTok{band1}
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{geology=}\KeywordTok{readGDAL}\NormalTok{(}\StringTok{"geology.mpr"}\NormalTok{)}\OperatorTok{$}\NormalTok{band1}
 
-
-
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{BBlue=}\KeywordTok{readGDAL}\NormalTok{(}\StringTok{"BBlue.mpr"}\NormalTok{)}\OperatorTok{$}\NormalTok{band1}
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{swir1=}\KeywordTok{readGDAL}\NormalTok{(}\StringTok{"swir1.asc"}\NormalTok{)}\OperatorTok{$}\NormalTok{band1}
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{swir2=}\KeywordTok{readGDAL}\NormalTok{(}\StringTok{"swir2.tif"}\NormalTok{)}\OperatorTok{$}\NormalTok{band1}
-
-
 
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{dem=predictors}\OperatorTok{$}\NormalTok{band1 }\CommentTok{# for replacing the first layer}
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{band1=}\OtherTok{NULL} \CommentTok{# for removing replaced layer}
@@ -1391,7 +1398,8 @@ Statistical distribution of the GIS layers may also need to be checked if it req
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{# Check for frequency distribution of the GIS layers}
-\KeywordTok{hist}\NormalTok{(predictors}\OperatorTok{@}\NormalTok{data[,}\KeywordTok{c}\NormalTok{(}\StringTok{"dem"}\NormalTok{,}\StringTok{"slope"}\NormalTok{,}\StringTok{"loncurve"}\NormalTok{,}\StringTok{"cnbl"}\NormalTok{,}\StringTok{"valley"}\NormalTok{,}\StringTok{"lcover"}\NormalTok{,}\StringTok{"rain"}\NormalTok{, }\StringTok{"geology"}\NormalTok{,}\StringTok{"pgeology"}\NormalTok{)])}
+\KeywordTok{hist}\NormalTok{(predictors}\OperatorTok{@}\NormalTok{data[,}\KeywordTok{c}\NormalTok{(}\StringTok{"dem"}\NormalTok{,}\StringTok{"slope"}\NormalTok{,}\StringTok{"loncurve"}\NormalTok{,}\StringTok{"cnbl"}\NormalTok{,}\StringTok{"valley"}\NormalTok{,}\StringTok{"lcover"}\NormalTok{,}\StringTok{"rain"}\NormalTok{,}
+                        \StringTok{"geology"}\NormalTok{,}\StringTok{"pgeology"}\NormalTok{)])}
 
 
 \CommentTok{# Step 1-3: Derive the remote sensing indices}
@@ -1445,7 +1453,8 @@ VSSI and BI image indices showed slight skew. Test with square-root transformati
 \CommentTok{# Step 1-5: Perform PCA and select the first PCs accounting for over 95% of the image indices' variation}
 
 \CommentTok{# Extract the image layers}
-\NormalTok{predicters=predictors}\OperatorTok{@}\NormalTok{data[,}\KeywordTok{c}\NormalTok{(}\StringTok{"SI1"}\NormalTok{,}\StringTok{"SI2"}\NormalTok{,}\StringTok{"SI3"}\NormalTok{,}\StringTok{"SI4"}\NormalTok{,}\StringTok{"SI5"}\NormalTok{,}\StringTok{"SI6"}\NormalTok{,}\StringTok{"SAVI"}\NormalTok{,}\StringTok{"VSSI"}\NormalTok{,}\StringTok{"NDS I"}\NormalTok{,}\StringTok{"NDVI"}\NormalTok{,}\StringTok{"SR"}\NormalTok{,}\StringTok{"CRSI"}\NormalTok{, }\StringTok{"BI"}\NormalTok{)]}
+\NormalTok{predicters=predictors}\OperatorTok{@}\NormalTok{data[,}\KeywordTok{c}\NormalTok{(}\StringTok{"SI1"}\NormalTok{,}\StringTok{"SI2"}\NormalTok{,}\StringTok{"SI3"}\NormalTok{,}\StringTok{"SI4"}\NormalTok{,}\StringTok{"SI5"}\NormalTok{,}\StringTok{"SI6"}\NormalTok{,}\StringTok{"SAVI"}\NormalTok{,}\StringTok{"VSSI"}\NormalTok{,}
+                              \StringTok{"NDS I"}\NormalTok{,}\StringTok{"NDVI"}\NormalTok{,}\StringTok{"SR"}\NormalTok{,}\StringTok{"CRSI"}\NormalTok{, }\StringTok{"BI"}\NormalTok{)]}
 \NormalTok{soil.cor=}\KeywordTok{cor}\NormalTok{(predicters)}
 \KeywordTok{corrplot}\NormalTok{(soil.cor,}\DataTypeTok{method=}\StringTok{"number"}\NormalTok{,}\DataTypeTok{number.cex =} \FloatTok{0.8}\NormalTok{) }\CommentTok{# Figure 5.3a}
 \NormalTok{pca<-}\KeywordTok{prcomp}\NormalTok{(predicters[], }\DataTypeTok{scale=}\OtherTok{TRUE}\NormalTok{)}
@@ -1526,7 +1535,9 @@ The data seems to have the required variables for harmonizing EC values. The fir
 \NormalTok{SSCP =}\StringTok{ }\KeywordTok{cbind}\NormalTok{(SSCP, }\KeywordTok{round}\NormalTok{(SSCP_norm, }\DecValTok{2}\NormalTok{))}
 \NormalTok{SSCP}\OperatorTok{$}\NormalTok{CLAY=SSCP}\OperatorTok{$}\NormalTok{CLAY_nm;SSCP}\OperatorTok{$}\NormalTok{SILT=SSCP}\OperatorTok{$}\NormalTok{SILT_nm;SSCP}\OperatorTok{$}\NormalTok{SAND=SSCP}\OperatorTok{$}\NormalTok{SAND_nm}
 \KeywordTok{rm}\NormalTok{(SSCP_norm)}
-\NormalTok{soil0=}\KeywordTok{cbind}\NormalTok{(soil0,}\StringTok{"TEXCLASS"}\NormalTok{ =}\KeywordTok{TT.points.in.classes}\NormalTok{(}\DataTypeTok{tri.data =}\NormalTok{SSCP[, }\KeywordTok{c}\NormalTok{(}\StringTok{'CLAY'}\NormalTok{, }\StringTok{'SILT'}\NormalTok{, }\StringTok{'SAND'}\NormalTok{)],}\DataTypeTok{class.sys =} \StringTok{"USDA.TT"}\NormalTok{,	}\DataTypeTok{PiC.type	=} \StringTok{"t"}\NormalTok{,}\DataTypeTok{collapse	=} \StringTok{', '}\NormalTok{))}
+\NormalTok{soil0=}\KeywordTok{cbind}\NormalTok{(soil0,}\StringTok{"TEXCLASS"}\NormalTok{ =}
+\StringTok{              }\KeywordTok{TT.points.in.classes}\NormalTok{(}\DataTypeTok{tri.data =}\NormalTok{SSCP[, }\KeywordTok{c}\NormalTok{(}\StringTok{'CLAY'}\NormalTok{, }\StringTok{'SILT'}\NormalTok{, }\StringTok{'SAND'}\NormalTok{)],}\DataTypeTok{class.sys =} \StringTok{"USDA.TT"}\NormalTok{,}
+                                   \DataTypeTok{PiC.type	=} \StringTok{"t"}\NormalTok{,}\DataTypeTok{collapse	=} \StringTok{', '}\NormalTok{))}
 \NormalTok{soil0}\OperatorTok{$}\NormalTok{TEXCLASS=}\KeywordTok{as.factor}\NormalTok{(soil0}\OperatorTok{$}\NormalTok{TEXCLASS)}
 \NormalTok{soil0}\OperatorTok{$}\NormalTok{TEXCLASS1=}\KeywordTok{as.numeric}\NormalTok{(soil0}\OperatorTok{$}\NormalTok{TEXCLASS)}
 \KeywordTok{summary}\NormalTok{(soil0}\OperatorTok{$}\NormalTok{TEXCLASS)}
@@ -1537,7 +1548,8 @@ The data seems to have the required variables for harmonizing EC values. The fir
 \CommentTok{#Cl	Lo Lo, SiLo	LoSa	SaClLo	SaLo	SiLo}
 \CommentTok{#2	51	2	9	1	104	22}
 
-\NormalTok{soil0}\OperatorTok{$}\NormalTok{TEXCLASS1=dplyr}\OperatorTok{::}\KeywordTok{recode}\NormalTok{(soil0}\OperatorTok{$}\NormalTok{TEXCLASS,}\DataTypeTok{Cl=}\DecValTok{1}\NormalTok{, }\DataTypeTok{ClLo =}\DecValTok{7}\NormalTok{, }\DataTypeTok{Lo=}\DecValTok{11}\NormalTok{, }\DataTypeTok{LoSa=}\DecValTok{10}\NormalTok{, }\DataTypeTok{Sa=}\DecValTok{12}\NormalTok{, }\DataTypeTok{SaCl=}\DecValTok{8}\NormalTok{, }\DataTypeTok{SaClLo=}\DecValTok{9}\NormalTok{,}\DataTypeTok{SaLo=}\DecValTok{5}\NormalTok{, }\DataTypeTok{SiCl=}\DecValTok{2}\NormalTok{,}\DataTypeTok{SiClLo=}\DecValTok{3}\NormalTok{,}\DataTypeTok{SiLo=}\DecValTok{4}\NormalTok{,}\DataTypeTok{Si=}\DecValTok{6}\NormalTok{,}\DataTypeTok{CS=}\DecValTok{13}\NormalTok{,}\DataTypeTok{MS=}\DecValTok{14}\NormalTok{,}\DataTypeTok{HCL=}\DecValTok{16}\NormalTok{,}\DataTypeTok{FS=}\DecValTok{15}\NormalTok{)}
+\NormalTok{soil0}\OperatorTok{$}\NormalTok{TEXCLASS1=dplyr}\OperatorTok{::}\KeywordTok{recode}\NormalTok{(soil0}\OperatorTok{$}\NormalTok{TEXCLASS,}\DataTypeTok{Cl=}\DecValTok{1}\NormalTok{, }\DataTypeTok{ClLo =}\DecValTok{7}\NormalTok{, }\DataTypeTok{Lo=}\DecValTok{11}\NormalTok{, }\DataTypeTok{LoSa=}\DecValTok{10}\NormalTok{,}
+                              \DataTypeTok{Sa=}\DecValTok{12}\NormalTok{, }\DataTypeTok{SaCl=}\DecValTok{8}\NormalTok{, }\DataTypeTok{SaClLo=}\DecValTok{9}\NormalTok{,}\DataTypeTok{SaLo=}\DecValTok{5}\NormalTok{, }\DataTypeTok{SiCl=}\DecValTok{2}\NormalTok{,}\DataTypeTok{SiClLo=}\DecValTok{3}\NormalTok{,}\DataTypeTok{SiLo=}\DecValTok{4}\NormalTok{,}\DataTypeTok{Si=}\DecValTok{6}\NormalTok{,}\DataTypeTok{CS=}\DecValTok{13}\NormalTok{,}\DataTypeTok{MS=}\DecValTok{14}\NormalTok{,}\DataTypeTok{HCL=}\DecValTok{16}\NormalTok{,}\DataTypeTok{FS=}\DecValTok{15}\NormalTok{)}
 
 \KeywordTok{summary}\NormalTok{(soil0}\OperatorTok{$}\NormalTok{TEXCLASS1)}
 \CommentTok{#Min.	1st Qu.	Median	Mean	3rd Qu.	Max.  1.000	5.000	5.000		6.691	11.000		11.000}
@@ -1711,13 +1723,15 @@ This harmonization is done to transform the frequency distribution to normal dis
 \begin{Highlighting}[]
 \CommentTok{#Step 1-9: Harmonization of statistical distribution}
 
-\KeywordTok{summary}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{X0.}\FloatTok{30.}\NormalTok{cm)}
-\NormalTok{Min.	1st Qu.	Median		Mean	3rd Qu.	Max. }\FloatTok{0.0000}		\FloatTok{0.6291}	\FloatTok{1.8709}	\FloatTok{6.6812}		\FloatTok{5.3121} \FloatTok{154.2463}
+\CommentTok{#summary(soil1$X0.30.cm)}
+\CommentTok{#Min.	1st Qu.	Median		Mean	3rd Qu.	Max. 0.0000		0.6291	1.8709	6.6812		5.3121 154.2463}
 
 \NormalTok{soil1}\OperatorTok{$}\NormalTok{dummy=(soil1}\OperatorTok{$}\NormalTok{EC)}\OperatorTok{+}\FloatTok{0.001} \CommentTok{# add "+0.001" if minimum X0.30.cm is zero}
-\KeywordTok{hist}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{dummy, }\DataTypeTok{main=}\StringTok{"Frequency distribution (before transformation)"}\NormalTok{, }\DataTypeTok{xlab=}\StringTok{"Harmo nized EC (dS/m)"}\NormalTok{)}
+\KeywordTok{hist}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{dummy, }\DataTypeTok{main=}\StringTok{"Frequency distribution (before transformation)"}\NormalTok{, }
+     \DataTypeTok{xlab=}\StringTok{"Harmo nized EC (dS/m)"}\NormalTok{)}
 \NormalTok{soil1}\OperatorTok{$}\NormalTok{Tran=(soil1}\OperatorTok{$}\NormalTok{dummy}\OperatorTok{^}\NormalTok{(}\KeywordTok{as.numeric}\NormalTok{(car}\OperatorTok{::}\KeywordTok{powerTransform}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{dummy, }\DataTypeTok{family =}\StringTok{"bcPowe r"}\NormalTok{)[}\StringTok{"lambda"}\NormalTok{]))}\OperatorTok{-}\DecValTok{1}\NormalTok{)}\OperatorTok{/}\NormalTok{(}\KeywordTok{as.numeric}\NormalTok{(car}\OperatorTok{::}\KeywordTok{powerTransform}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{dummy, }\DataTypeTok{family =}\StringTok{"bcPower"}\NormalTok{)[}\StringTok{"la mbda"}\NormalTok{]))}
-\KeywordTok{hist}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{Tran, }\DataTypeTok{main=}\StringTok{"Frequency distribution (after transformation)"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"Harmoniz ed EC (dS/m)"}\NormalTok{)}
+\KeywordTok{hist}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{Tran, }\DataTypeTok{main=}\StringTok{"Frequency distribution (after transformation)"}\NormalTok{,}
+     \DataTypeTok{xlab=}\StringTok{"Harmoniz ed EC (dS/m)"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1904,8 +1918,10 @@ Prediction limits on the Box-Cox transformed values at 95\% confidence interval 
 \begin{Highlighting}[]
 \CommentTok{#Step 2-4: Accuracy assessment}
 \KeywordTok{cor}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain,df.testa}\OperatorTok{$}\NormalTok{dummy)}\OperatorTok{^}\DecValTok{2}\NormalTok{ [}\DecValTok{1}\NormalTok{] }\FloatTok{0.9950319}
-\NormalTok{\{}\KeywordTok{plot}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{~}\NormalTok{df.testa}\OperatorTok{$}\NormalTok{dummy, }\DataTypeTok{xlab=}\StringTok{"Measured ECse"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"Modelled ECse"}\NormalTok{, mai }\DataTypeTok{n=}\StringTok{"Accuracy assessment on hold-out samples"}\NormalTok{)}
-\OperatorTok{+}	\KeywordTok{abline}\NormalTok{(}\DataTypeTok{a=}\DecValTok{0}\NormalTok{,}\DataTypeTok{b=}\DecValTok{1}\NormalTok{,}\DataTypeTok{lty=}\DecValTok{20}\NormalTok{, }\DataTypeTok{col=}\StringTok{"blue"}\NormalTok{)\} }\CommentTok{# Figure 5.9}
+\NormalTok{\{}\KeywordTok{plot}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{~}\NormalTok{df.testa}\OperatorTok{$}\NormalTok{dummy, }
+      \DataTypeTok{xlab=}\StringTok{"Measured ECse"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"Modelled ECse"}\NormalTok{, }
+      \DataTypeTok{main=}\StringTok{"Accuracy assessment on hold-out samples"}\NormalTok{)}
+	\KeywordTok{abline}\NormalTok{(}\DataTypeTok{a=}\DecValTok{0}\NormalTok{,}\DataTypeTok{b=}\DecValTok{1}\NormalTok{,}\DataTypeTok{lty=}\DecValTok{20}\NormalTok{, }\DataTypeTok{col=}\StringTok{"blue"}\NormalTok{)\} }\CommentTok{# Figure 5.9}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1918,9 +1934,11 @@ Prediction limits on the Box-Cox transformed values at 95\% confidence interval 
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{Bias=}\KeywordTok{mean}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\NormalTok{df.testa}\OperatorTok{$}\NormalTok{dummy,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{)}
-\NormalTok{RMSE=}\KeywordTok{sqrt}\NormalTok{(}\KeywordTok{sum}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\NormalTok{df.testa}\OperatorTok{$}\NormalTok{dummy,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{)}\OperatorTok{^}\DecValTok{2}\OperatorTok{/}\KeywordTok{length}\NormalTok{((df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\NormalTok{d f.testa}\OperatorTok{$}\NormalTok{dummy)))}
+\NormalTok{RMSE=}\KeywordTok{sqrt}\NormalTok{(}\KeywordTok{sum}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\NormalTok{df.testa}\OperatorTok{$}\NormalTok{dummy,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{)}\OperatorTok{^}\DecValTok{2}
+          \OperatorTok{/}\KeywordTok{length}\NormalTok{((df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\NormalTok{d f.testa}\OperatorTok{$}\NormalTok{dummy)))}
 \NormalTok{Rsquared=}\KeywordTok{cor}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain,df.testa}\OperatorTok{$}\NormalTok{dummy)}\OperatorTok{^}\DecValTok{2}
-\NormalTok{NSE=}\DecValTok{1}\OperatorTok{-}\KeywordTok{sum}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\NormalTok{df.testa}\OperatorTok{$}\NormalTok{dummy,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{)}\OperatorTok{^}\DecValTok{2}\OperatorTok{/}\KeywordTok{sum}\NormalTok{((df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\KeywordTok{mean}\NormalTok{(df. testa}\OperatorTok{$}\NormalTok{dummy,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{))}\OperatorTok{^}\DecValTok{2}\NormalTok{,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{)}
+\NormalTok{NSE=}\DecValTok{1}\OperatorTok{-}\KeywordTok{sum}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\NormalTok{df.testa}\OperatorTok{$}\NormalTok{dummy,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{)}\OperatorTok{^}\DecValTok{2}
+\OperatorTok{/}\KeywordTok{sum}\NormalTok{((df.testa}\OperatorTok{$}\NormalTok{Strain}\OperatorTok{-}\KeywordTok{mean}\NormalTok{(df. testa}\OperatorTok{$}\NormalTok{dummy,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{))}\OperatorTok{^}\DecValTok{2}\NormalTok{,}\DataTypeTok{na.rm=}\OtherTok{TRUE}\NormalTok{)}
 \NormalTok{statia=}\KeywordTok{data.frame}\NormalTok{(Bias,RMSE,Rsquared,NSE);}\KeywordTok{View}\NormalTok{(statia)}
 \KeywordTok{write.csv}\NormalTok{(statia,}\DataTypeTok{file =} \StringTok{"EC0_30_validmodel_stats.csv"}\NormalTok{)}
 \end{Highlighting}
@@ -1937,7 +1955,10 @@ The model can now be used to produce spatial prediction of the target variable (
 \NormalTok{lmbda1=(}\KeywordTok{as.numeric}\NormalTok{(}\KeywordTok{powerTransform}\NormalTok{(soil1}\OperatorTok{$}\NormalTok{dummy, }\DataTypeTok{family =}\StringTok{"bcPower"}\NormalTok{)[}\StringTok{"lambda"}\NormalTok{]))}
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{ECte=}\KeywordTok{predicta}\NormalTok{(rf.ec,predictors)}
 \KeywordTok{coordinates}\NormalTok{(df.testa)=}\ErrorTok{~}\NormalTok{Longitude}\OperatorTok{+}\NormalTok{Latitude}
-\KeywordTok{proj4string}\NormalTok{(df.testa)=}\KeywordTok{CRS}\NormalTok{(}\StringTok{"+proj=utm +zone=36 +datum=WGS84 +units=m +no_defs +ellps= WGS84 +towgs84=0,0,0"}\NormalTok{) }\CommentTok{# Make sure to use correct CRS}
+\KeywordTok{proj4string}\NormalTok{(df.testa)=}\KeywordTok{CRS}\NormalTok{(}\StringTok{"+proj=utm +zone=36}
+\StringTok{                          +datum=WGS84 +units=m +no_defs }
+\StringTok{                          +ellps= WGS84 +towgs84=0,0,0"}\NormalTok{) }
+\CommentTok{# Make sure to use correct CRS}
 \NormalTok{predicters.ov1=}\KeywordTok{over}\NormalTok{(df.testa, predictors)}
 \NormalTok{df.testa}\OperatorTok{$}\NormalTok{Predre=predicters.ov1}\OperatorTok{$}\NormalTok{ECse}
 \KeywordTok{cor}\NormalTok{(df.testa}\OperatorTok{$}\NormalTok{dummy,df.testa}\OperatorTok{$}\NormalTok{Predre)}\OperatorTok{^}\DecValTok{2}\NormalTok{ [}\DecValTok{1}\NormalTok{] }\FloatTok{0.9978655}
@@ -1986,7 +2007,7 @@ where \(y\) is the target soil variable to be mapped, \(X\) is a vector of spati
 \begin{equation}
 \tag{5.7}
 y - \bar{y} = [f(X) + \varepsilon] - \bar{f}(X)\\
-= [f(x) -\]+ \varepsilon
+= [f(x) -\bar{f}(x)]+ \varepsilon
 \end{equation}
 
 In this Book, the uncertain quantity is estimated using prediction width at 95\% confidence interval. predUncertain function in soilassessment package is used to extract the uncertainty by bootstrap approach (Efron, 1992). The inputs for the function are a list of predictors, input soil indicator, and the chosen link model (which is taken from the suitable model for map development in Section 5.3.1).
@@ -1995,13 +2016,16 @@ In this Book, the uncertain quantity is estimated using prediction width at 95\%
 \begin{Highlighting}[]
 \CommentTok{#Step 2-6: Uncertainty assessment}
 \NormalTok{soil6a=soil1[,}\KeywordTok{c}\NormalTok{(}\StringTok{"Tran"}\NormalTok{)]}
-\NormalTok{predictors6a=predictors[}\KeywordTok{c}\NormalTok{(}\StringTok{"dem"}\NormalTok{,}\StringTok{"slope"}\NormalTok{,}\StringTok{"cnbl"}\NormalTok{,}\StringTok{"lcover"}\NormalTok{,}\StringTok{"loncurve"}\NormalTok{,}\StringTok{"rain"}\NormalTok{,}\StringTok{"pgeology"}
+\NormalTok{predictors6a=predictors[}\KeywordTok{c}\NormalTok{(}\StringTok{"dem"}\NormalTok{,}\StringTok{"slope"}\NormalTok{,}\StringTok{"cnbl"}\NormalTok{,}
+                          \StringTok{"lcover"}\NormalTok{,}\StringTok{"loncurve"}\NormalTok{,}\StringTok{"rain"}\NormalTok{,}\StringTok{"pgeology"}
 \NormalTok{,}\StringTok{"geology"}\NormalTok{,}\StringTok{"ls"}\NormalTok{,}\StringTok{"valley"}\NormalTok{,}\StringTok{"PCA1"}\NormalTok{,}\StringTok{"PCA2"}\NormalTok{,}\StringTok{"PCA3"}\NormalTok{,}\StringTok{"PCA4"}\NormalTok{,}\StringTok{"PCA5"}\NormalTok{)]}
 
 \NormalTok{pred_uncerta=}\KeywordTok{predUncertain}\NormalTok{(soil6a,predictors6a,}\DecValTok{3}\NormalTok{,}\DecValTok{95}\NormalTok{,}\StringTok{"qrandomforest"}\NormalTok{)}
 
 
-\KeywordTok{spplot}\NormalTok{(pred_uncerta, }\StringTok{"pred_width"}\NormalTok{, }\DataTypeTok{scales =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{draw =} \OtherTok{TRUE}\NormalTok{),}\DataTypeTok{col.regions=}\NormalTok{heat.color }\KeywordTok{s}\NormalTok{(}\DecValTok{20}\NormalTok{,}\DataTypeTok{rev =} \OtherTok{TRUE}\NormalTok{)) }\OperatorTok{+}\StringTok{ }\KeywordTok{spplot}\NormalTok{(df.testa,}\StringTok{"dummy"}\NormalTok{,}\DataTypeTok{pch=}\DecValTok{3}\NormalTok{,}\DataTypeTok{cex=}\FloatTok{0.4}\NormalTok{) }\CommentTok{#Figure 6.11}
+\KeywordTok{spplot}\NormalTok{(pred_uncerta, }\StringTok{"pred_width"}\NormalTok{, }\DataTypeTok{scales =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{draw =} \OtherTok{TRUE}\NormalTok{),}
+       \DataTypeTok{col.regions=}\NormalTok{heat.color }\KeywordTok{s}\NormalTok{(}\DecValTok{20}\NormalTok{,}\DataTypeTok{rev =} \OtherTok{TRUE}\NormalTok{)) }
+ \KeywordTok{spplot}\NormalTok{(df.testa,}\StringTok{"dummy"}\NormalTok{,}\DataTypeTok{pch=}\DecValTok{3}\NormalTok{,}\DataTypeTok{cex=}\FloatTok{0.4}\NormalTok{) }\CommentTok{#Figure 6.11}
 
 
 \CommentTok{#Step 2-7: Exporting the uncertainty maps}
@@ -2056,7 +2080,9 @@ where \emph{salt} is the class of type or intensity of the salt problems and err
 \NormalTok{predictors}\OperatorTok{$}\NormalTok{saltiness=}\KeywordTok{classCode}\NormalTok{(predictors}\OperatorTok{$}\NormalTok{salty,}\StringTok{"saltclass"}\NormalTok{)}
 \KeywordTok{spplot}\NormalTok{(predictors[}\StringTok{"salty"}\NormalTok{])}
 \KeywordTok{spplot}\NormalTok{(predictors[}\StringTok{"saltiness"}\NormalTok{]) }\CommentTok{# Figure 5.12a}
-\NormalTok{predictors}\OperatorTok{$}\NormalTok{Salt_affected=}\KeywordTok{saltSeverity}\NormalTok{(predictors}\OperatorTok{$}\NormalTok{ECse,predictors}\OperatorTok{$}\NormalTok{PH,predictors}\OperatorTok{$}\NormalTok{ESP,}\StringTok{" FAO"}\NormalTok{)	predictors}\OperatorTok{$}\NormalTok{saltaffectedness=}\KeywordTok{classCode}\NormalTok{(predictors}\OperatorTok{$}\NormalTok{Salt_affected,}\StringTok{"saltseverity"}\NormalTok{)}
+\NormalTok{predictors}\OperatorTok{$}\NormalTok{Salt_affected=}\KeywordTok{saltSeverity}\NormalTok{(predictors}\OperatorTok{$}\NormalTok{ECse,predictors}\OperatorTok{$}\NormalTok{PH,predictors}\OperatorTok{$}\NormalTok{ESP,}\StringTok{" FAO"}\NormalTok{)}
+
+\NormalTok{predictors}\OperatorTok{$}\NormalTok{saltaffectedness=}\KeywordTok{classCode}\NormalTok{(predictors}\OperatorTok{$}\NormalTok{Salt_affected,}\StringTok{"saltseverity"}\NormalTok{)}
 \KeywordTok{spplot}\NormalTok{(predictors[}\StringTok{"saltaffectedness"}\NormalTok{]) }\CommentTok{# Figure 5.12b}
 \end{Highlighting}
 \end{Shaded}
@@ -2092,7 +2118,8 @@ Accuracy of classified salt-affected map is assessed using confusion matrix. In 
 \NormalTok{soilv=}\KeywordTok{subset}\NormalTok{(soilv,soilv}\OperatorTok{$}\NormalTok{Horizon}\OperatorTok{==}\DecValTok{1}\NormalTok{)}
 \NormalTok{soilv}\OperatorTok{$}\NormalTok{salt_affected1=}\KeywordTok{saltSeverity}\NormalTok{(soilv}\OperatorTok{$}\NormalTok{EC,soilv}\OperatorTok{$}\NormalTok{pH,soilv}\OperatorTok{$}\NormalTok{ESP,}\StringTok{"FAO"}\NormalTok{)}
 \KeywordTok{summary}\NormalTok{(soilv}\OperatorTok{$}\NormalTok{salt_affected1)}
-\CommentTok{# Min. 1st Qu.	Median	Mean 3rd Qu.	Max. 3.0	6.0		8.0		8.5	#11.5	15.0}
+\CommentTok{# Min. 1st Qu.	Median	Mean 3rd Qu.	Max. 3.0	6.0		8.0		8.5	}
+\CommentTok{#11.5	15.0}
 
 \NormalTok{soilv}\OperatorTok{$}\NormalTok{saltaffectedness1=}\KeywordTok{classCode}\NormalTok{(soilv}\OperatorTok{$}\NormalTok{salt_affected1,}\StringTok{"saltseverity"}\NormalTok{)}
 \KeywordTok{summary}\NormalTok{(soilv}\OperatorTok{$}\NormalTok{saltaffectedness1)}
@@ -2120,7 +2147,9 @@ A visual comparison shows that the validation datasets had points classified as 
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{# Plot the confusion matrix and determine the Kappa index}
-\KeywordTok{agreementplot}\NormalTok{(}\KeywordTok{confusion}\NormalTok{(soilv}\OperatorTok{$}\NormalTok{salt_affected, soilv}\OperatorTok{$}\NormalTok{salt_affected1),}\DataTypeTok{main =} \StringTok{"Accuracy assessment"}\NormalTok{,}\DataTypeTok{xlab =} \StringTok{"Class codes in holdout samples"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"Class codes in map"}\NormalTok{)}
+\KeywordTok{agreementplot}\NormalTok{(}\KeywordTok{confusion}\NormalTok{(soilv}\OperatorTok{$}\NormalTok{salt_affected, soilv}\OperatorTok{$}\NormalTok{salt_affected1),}
+              \DataTypeTok{main =} \StringTok{"Accuracy assessment"}\NormalTok{,}\DataTypeTok{xlab =} \StringTok{"Class codes in holdout samples"}\NormalTok{,}
+              \DataTypeTok{ylab =} \StringTok{"Class codes in map"}\NormalTok{)}
 \KeywordTok{Kappa}\NormalTok{(}\KeywordTok{confusion}\NormalTok{(soilv}\OperatorTok{$}\NormalTok{salt_affected, soilv}\OperatorTok{$}\NormalTok{salt_affected1)) }
 \end{Highlighting}
 \end{Shaded}
@@ -2142,7 +2171,7 @@ Uncertainty assessment in salt-affected modelling is conceived as estimating unc
 \caption{Figure 5.14: Monte Carlo uncertainty estimation process}
 \end{figure}
 
-Development of marginal density functions uses statistical distribution parameters and correlation models (crm). Examples of statistical distribution parameters, which depend on the type of distribution, are the mean(??????????) and standard variation (????????) for normal distribution or the scale (???) and rate (??) for gamma distribution.
+Development of marginal density functions uses statistical distribution parameters and correlation models (crm). Examples of statistical distribution parameters, which depend on the type of distribution, are the mean \(\bar{x}\) and standard variation \(s\) for normal distribution or the scale \(\lambda\) and rate \(\alpha\) for gamma distribution.
 The following steps describes the process for preparing the input indicator maps into raster file format, since the modules for uncertainty assessment were developed for the raster file format. The input maps are further converted into spatialPixelsDataFrame to facilitate mathematical operations on dataframes. It is important to check the probability distributions of the input data using the histogram function. Although MC simulations in Figure 5.14 are not strict on the type of the distribution, normal distribution is easy to sample. It's therefore recommended that normalized distributions be established from the input maps.
 
 \begin{Shaded}
@@ -2195,9 +2224,16 @@ The above correlation functions are repeated for all input soil indicators for 0
 \CommentTok{# [1] 0.3204495}
 \CommentTok{# [1] 0.2859129}
 
-\NormalTok{		salinityMUM =}\StringTok{ }\KeywordTok{defineMUM}\NormalTok{(}\DataTypeTok{UMlist =} \KeywordTok{list}\NormalTok{(EC_UM, PH_UM, ESP_UM), }\DataTypeTok{cormatrix =} \KeywordTok{matrix}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte),}\KeywordTok{values}\NormalTok{(PHde)), }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte),}\KeywordTok{values}\NormalTok{(ESPt)), }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte), }\KeywordTok{values}\NormalTok{(PHde)), }\DecValTok{1}\NormalTok{, }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(PHde), }\KeywordTok{values}\NormalTok{(ESPt)), }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte), }\KeywordTok{values}\NormalTok{(ESPt)), }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(PHde), }\KeywordTok{values}\NormalTok{(ESPt)),}\DecValTok{1}\NormalTok{), }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{, }\DataTypeTok{ncol =} \DecValTok{3}\NormalTok{))}
+\NormalTok{salinityMUM =}\StringTok{ }\KeywordTok{defineMUM}\NormalTok{(}\DataTypeTok{UMlist =} \KeywordTok{list}\NormalTok{(EC_UM, PH_UM, ESP_UM), }\DataTypeTok{cormatrix =} 
+                          \KeywordTok{matrix}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte),}\KeywordTok{values}\NormalTok{(PHde)), }
+                                \KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte),}\KeywordTok{values}\NormalTok{(ESPt)),}
+                                \KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte), }\KeywordTok{values}\NormalTok{(PHde)), }
+                                \DecValTok{1}\NormalTok{, }\KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(PHde), }\KeywordTok{values}\NormalTok{(ESPt)), }
+                                \KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(ECte), }\KeywordTok{values}\NormalTok{(ESPt)), }
+                                \KeywordTok{cor}\NormalTok{(}\KeywordTok{values}\NormalTok{(PHde), }\KeywordTok{values}\NormalTok{(ESPt)),}\DecValTok{1}\NormalTok{), }
+                                \DataTypeTok{nrow =} \DecValTok{3}\NormalTok{, }\DataTypeTok{ncol =} \DecValTok{3}\NormalTok{))}
 
-	\KeywordTok{class}\NormalTok{(salinityMUM)}
+\KeywordTok{class}\NormalTok{(salinityMUM)}
 \CommentTok{#[1] "JointNumericSpatial"}
 \end{Highlighting}
 \end{Shaded}
@@ -2244,12 +2280,12 @@ propagate through the classification model into the final classified map.
 \begin{Highlighting}[]
 \CommentTok{#Step 3-7: Uncertainty propagation through the classification model}
 \NormalTok{	Salinity_model_raster <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{ (EC1,PH1,ESP1)\{}
-\OperatorTok{+}\NormalTok{	ww=EC1}
-\OperatorTok{+}\NormalTok{	ww=}\KeywordTok{raster}\NormalTok{(ww)}
-\OperatorTok{+}\NormalTok{	ww}\OperatorTok{$}\NormalTok{salt=}\KeywordTok{saltSeverity}\NormalTok{(}\KeywordTok{values}\NormalTok{(EC1),}\KeywordTok{values}\NormalTok{(PH1),}\KeywordTok{values}\NormalTok{(ESP1),}\StringTok{"FAO"}\NormalTok{)}
-\OperatorTok{+}\NormalTok{	ww=ww}\OperatorTok{$}\NormalTok{salt; }\KeywordTok{names}\NormalTok{(ww)=}\KeywordTok{c}\NormalTok{(}\StringTok{"salt"}\NormalTok{)}
-\OperatorTok{+}\NormalTok{	ww}
-\OperatorTok{+}\StringTok{ }\NormalTok{\}}
+\NormalTok{  ww=EC1}
+\NormalTok{  ww=}\KeywordTok{raster}\NormalTok{(ww)}
+\NormalTok{	ww}\OperatorTok{$}\NormalTok{salt=}\KeywordTok{saltSeverity}\NormalTok{(}\KeywordTok{values}\NormalTok{(EC1),}\KeywordTok{values}\NormalTok{(PH1),}\KeywordTok{values}\NormalTok{(ESP1),}\StringTok{"FAO"}\NormalTok{)}
+\NormalTok{	ww=ww}\OperatorTok{$}\NormalTok{salt; }\KeywordTok{names}\NormalTok{(ww)=}\KeywordTok{c}\NormalTok{(}\StringTok{"salt"}\NormalTok{)}
+\NormalTok{	ww}
+\NormalTok{\}}
 
 \NormalTok{	v <-}\StringTok{ }\KeywordTok{list}\NormalTok{()}
 \NormalTok{	v[[}\DecValTok{1}\NormalTok{]] =}\StringTok{ }\KeywordTok{map}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{100}\NormalTok{, }\ControlFlowTok{function}\NormalTok{(x)\{input_sample[[x]]\})}
@@ -2284,9 +2320,18 @@ The final output is exported to a GIS file format for map layout development (Fi
 Overall classification accuracy of salt-affected topsoils (0-30 cm) was 65\%. These soils covered more than 82\% of the topsoils in the case-study area (Figure 5.17). Northwest of the area had slight to moderately saline topsoil with pockets of overlying saline-sodic and slightly sodic topsoils. Topsoil salinity seems to be predominant in the eastern side towards the Red Sea. Topsoil sodicity seems to be concentrated along the River Nile (Figure 5.17).
 The above steps for developing maps of salt-affected soils and associated uncertainty maps should be repeated for 30-100 cm soil depths.
 
+\begin{figure}
+\centering
 \includegraphics{figures/images/Figure5.17.jpg}
-\#\# Map update\\
-\#\#\# Update needs assessment\\
+\caption{Figure 5.17: Map of salt-affected topsoil (0-30 cm) in study area}
+\end{figure}
+
+\hypertarget{map-update}{%
+\section{Map update}\label{map-update}}
+
+\hypertarget{update-needs-assessment}{%
+\subsection{Update needs assessment}\label{update-needs-assessment}}
+
 Salt problem in the soil is a dynamic phenomenon owing to the changing characteristics of its drivers. It is therefore expected that maps of salt-affected soils will also change with time. Furthermore, the spatial coverage of measured soil indicators is not always exhaustive owing to sampling limitations. Altogether, these factors emphasize the need for planning for updates. The following factors need consideration when planning update for salt-affected soil maps:
 
 \begin{enumerate}
