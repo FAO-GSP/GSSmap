@@ -1,7 +1,7 @@
 --- 
-title: ""
+title: "MAPPING OF SALT-AFFECTED SOILS - Technical manual, Rome, 2020"
 
-author: "MAPPING OF SALT-AFFECTED SOILS - Technical manual, Rome, 2020"
+author: ""
 output:
   pdf_document: default
   html_document:
