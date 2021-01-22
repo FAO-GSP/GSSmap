@@ -84,8 +84,11 @@ Samuel Francke  -  *Intergovernmental Technical Panel on Soils ITPS, FAO*
 Isabelle Verbeke  -  *Global Soil Partnership, FAO *  
 Matteo Sala -  *Global Soil Partnership, FAO *  
 
+### GitHub Page{-}
+Isabel Luotto -  *Global Soil Partnership, FAO *  
 
-**Recommended citation:**
+
+### Recommended citation:{-}
 
 > Omuto CT, Vargas RR, El Mobarak, AM, Mohamed N, Viatkin K, Yigini Y. 2020. Mapping of salt-affected soils: Technical manual. Rome, FAO
 https://doi.org/10.4060/ca9215en
