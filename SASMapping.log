@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.1.15)  22 JAN 2021 13:31
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.1.15)  25 JAN 2021 09:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,7 +369,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip52
 )
 (c:/Users/hp/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
 \FV@CodeLineNo=\count293
 \FV@InFile=\read2
 \FV@TabBox=\box51
